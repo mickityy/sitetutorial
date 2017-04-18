@@ -1,0 +1,1951 @@
+<!DOCTYPE html>
+<!-- saved from url=(0081)http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css -->
+<html itemscope="" itemtype="http://schema.org/QAPage"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>css3 - How to flip background image using CSS? - Stack Overflow</title>
+    <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d">
+    <link rel="apple-touch-icon image_src" href="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+    <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="http://stackoverflow.com/opensearch.xml">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:domain" content="stackoverflow.com">
+    <meta property="og:type" content="website">
+
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon@2.png?v=73d79a89bded">
+    <meta name="twitter:title" property="og:title" itemprop="title name" content="How to flip background image using CSS?">
+    <meta name="twitter:description" property="og:description" itemprop="description" content="How to flip any background image using CSS? Is it possible?
+
+currenty I&#39;m using this arrow image in a background-image of li in css
+On :visited I need to flip this arrow horizontally. I can do thi...">
+    <meta property="og:url" content="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css">
+    <link rel="canonical" href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css">
+
+    
+    
+    <script type="text/javascript" async="" src="http://engine.adzerk.net/ados?t=1492533342937&amp;request={%22Placements%22:[{%22A%22:22,%22S%22:8277,%22D%22:%22adzerk1160430730%22,%22AT%22:4,%22Z%22:[43]},{%22A%22:22,%22S%22:8277,%22D%22:%22adzerk572226798%22,%22AT%22:4,%22Z%22:[44]},{%22A%22:22,%22S%22:8277,%22D%22:%22adzerk1739753213%22,%22ATA%22:[5,17,2221,1129,43],%22Z%22:[45]}],%22Keywords%22:%22css%2Ccss3%2Cmobile-webkit%2Cx-persona-frontend%22,%22Referrer%22:%22https%3A%2F%2Fwww.google.com%2F%22,%22IsAsync%22:true}"></script><script src="./css3 - How to flip background image using CSS_ - Stack Overflow_files/rules-p-c1rF4kxgLUzNc.js.download"></script><script async="" src="./css3 - How to flip background image using CSS_ - Stack Overflow_files/quant.js.download"></script><script async="" src="./css3 - How to flip background image using CSS_ - Stack Overflow_files/beacon.js.download"></script><script async="" src="./css3 - How to flip background image using CSS_ - Stack Overflow_files/analytics.js.download"></script><script type="text/javascript" async="" src="./css3 - How to flip background image using CSS_ - Stack Overflow_files/ados.js.download"></script><script src="./css3 - How to flip background image using CSS_ - Stack Overflow_files/jquery.min.js.download"></script>
+    <script src="./css3 - How to flip background image using CSS_ - Stack Overflow_files/stub.en.js.download"></script>
+    <link rel="stylesheet" type="text/css" href="./css3 - How to flip background image using CSS_ - Stack Overflow_files/all.css">
+
+            <link rel="alternate" type="application/atom+xml" title="Feed for question &#39;How to flip background image using CSS?&#39;" href="http://stackoverflow.com/feeds/question/5768998">
+            <meta name="twitter:app:country" content="US">
+            <meta name="twitter:app:name:iphone" content="Stack Exchange iOS">
+            <meta name="twitter:app:id:iphone" content="871299723">
+            <meta name="twitter:app:url:iphone" content="se-zaphod://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css">
+            <meta name="twitter:app:name:ipad" content="Stack Exchange iOS">
+            <meta name="twitter:app:id:ipad" content="871299723">
+            <meta name="twitter:app:url:ipad" content="se-zaphod://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css">
+            <meta name="twitter:app:name:googleplay" content="Stack Exchange Android">
+            <meta name="twitter:app:url:googleplay" content="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css">
+            <meta name="twitter:app:id:googleplay" content="com.stackexchange.marvin">
+        <script>
+        
+            StackExchange.ready(function () {
+                                    
+                    StackExchange.using("snippets", function () {
+                        StackExchange.snippets.initSnippetRenderer();
+                    });
+                    
+
+                StackExchange.using("postValidation", function () {
+                    StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+                });
+
+                
+                StackExchange.question.init({showAnswerHelp:true,totalCommentCount:2,shownCommentCount:2,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:5768998});
+
+                styleCode();
+
+                    StackExchange.realtime.subscribeToQuestion('1', '5768998');
+                                                                    StackExchange.using("gps", function () { StackExchange.gps.trackOutboundClicks('#content', '.post-text', true); });
+
+            });
+        </script>
+
+
+    <script>
+        StackExchange.init({"locale":"en","stackAuthUrl":"https://stackauth.com","networkMetaHostname":"meta.stackexchange.com","serverTime":1492533344,"routeName":"Questions/Show","site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdchgIAAAAAAJwGpIzRQSOFaO0pU6s44Xt8aTwc","recaptchaAudioLang":"en","enableNewTagCreationWarning":true,"insertSpaceAfterNameTabCompletion":false,"id":1,"enableInsertDocLinkDialog":true,"childUrl":"https://meta.stackoverflow.com","enableSocialMediaInSharePopup":true,"protocol":"http"},"user":{"fkey":"a28ec24c64c8646fd4068deace1c3fa8","rep":0,"isAnonymous":true,"isAnonymousNetworkWide":true,"canSeeNewHeaderDesign":true},"events":{"postType":{"question":1},"postEditionSection":{"title":1,"body":2,"tags":3}},"story":{"minCompleteBodyLength":75,"likedTagsMaxLength":300,"dislikedTagsMaxLength":300}}, {"site":{"allowImageUploads":true,"enableUserHovercards":true,"styleCode":true,"enableNewLinkInsertDialog":true,"enableImgurHttps":true,"forceHttpsImages":true},"comments":{},"userProfile":{"openGraphAPIKey":"58740831ad23540e00c58987"},"tags":{},"accounts":{"currentPasswordRequiredForChangingStackIdPassword":true},"flags":{"allowRetractingFlags":true},"snippets":{"snippetsEnabled":true,"renderDomain":"stacksnippets.net"},"markdown":{"asteriskIntraWordEmphasis":true},"monitoring":{"clientTimingsAbsoluteTimeout":30000,"clientTimingsDebounceTimeout":1000}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.en.js":"fbc8588a92e6","js/moderator.en.js":"40864e2316e3","js/full-anon.en.js":"1b847c68bc53","js/full.en.js":"a29a4e5531de","js/wmd.en.js":"e8b00c0d6755","js/third-party/jquery.autocomplete.min.js":"d3b8fa7fdf74","js/third-party/jquery.autocomplete.min.en.js":"","js/mobile.en.js":"978c4e09340e","js/help.en.js":"54b998574be9","js/tageditor.en.js":"248fce004255","js/tageditornew.en.js":"3c2410680f23","js/inline-tag-editing.en.js":"77dde44800e2","js/revisions.en.js":"8f22ba768cac","js/review.en.js":"ca8f07e2775a","js/tagsuggestions.en.js":"d1ff9b84abe5","js/post-validation.en.js":"dfc98373b636","js/explore-qlist.en.js":"e71f14781288","js/events.en.js":"73885852bf3f","js/keyboard-shortcuts.en.js":"986d1c3b34f4","js/external-editor.en.js":"e574ed908cf3","js/adops.en.js":"9a6a7812a212","js/external-editor.en.js":"e574ed908cf3","js/snippet-javascript.en.js":"8949a8564319","js/snippet-javascript-codemirror.en.js":"44f07d4599a5"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    </script>
+    
+        <script>
+            StackExchange.ready(function () {
+                $('#nav-tour').click(function () {
+                    StackExchange.using("gps", function() {
+                        StackExchange.gps.track("aboutpage.click", { aboutclick_location: "headermain" }, true);
+                    });
+                });
+            });
+        </script>
+    <noscript id="noscript-css">&lt;style type="text/css"&gt;body,.so-header{margin-top:1.9em}&lt;/style&gt;</noscript>
+<script async="" src="./css3 - How to flip background image using CSS_ - Stack Overflow_files/full-anon.en.js.download"></script><script async="" src="./css3 - How to flip background image using CSS_ - Stack Overflow_files/snippet-javascript.en.js.download"></script><script async="" src="./css3 - How to flip background image using CSS_ - Stack Overflow_files/post-validation.en.js.download"></script><script async="" src="./css3 - How to flip background image using CSS_ - Stack Overflow_files/prettify-full.en.js.download"></script><script type="text/javascript" src="http://static.adzerk.net/Extensions/adFeedback.js"></script><link rel="stylesheet" href="http://static.adzerk.net/Extensions/adFeedback.css"><link rel="stylesheet" href="./css3 - How to flip background image using CSS_ - Stack Overflow_files/jobs-multi.min.css" type="text/css"></head>
+<body class="question-page new-topbar">
+            <script>(function () { var old = $.fn.contents; $.fn.contents = function () { try { return old.apply(this, arguments); } catch (e) { return $([]); } } })()</script>
+        
+
+    <div id="notify-container"></div>
+    <div id="custom-header"></div>
+
+
+<header class="so-header js-so-header _fixed _scrolling">
+    <div class="-container">
+        <div class="-main">            
+            <a href="http://stackoverflow.com/" class="-logo ">
+                <span class="-img">Stack Overflow</span>
+            </a>
+
+            <nav class="navigation" role="navigation" aria-label="site navigation">
+                <ol class="-list">
+                        <li class="-item _current">
+        <a id="nav-questions" href="http://stackoverflow.com/questions" class="-link js-gps-track" data-gps-track="top_nav.click({is_current:true, location:2, destination:1})">Questions</a>
+    </li>
+
+    <li class="-item">
+        <a id="nav-jobs" href="http://stackoverflow.com/jobs?med=site-ui&amp;ref=jobs-tab" class="-link js-gps-track" data-gps-track="top_nav.click({is_current:false, location:2, destination:6})">Jobs</a>
+    </li>
+                        <li class="-item">
+        <a id="nav-docs" href="http://stackoverflow.com/documentation" class="-link js-gps-track" data-gps-track="top_nav.click({is_current:false, location:2, destination:7})">Documentation <small class="beta-badge">beta</small></a>
+    </li>
+                        <li class="-item">
+        <a id="nav-tags" href="http://stackoverflow.com/tags" class="-link js-gps-track" data-gps-track="top_nav.click({is_current:false, location:2, destination:2})">Tags</a>
+    </li>
+
+                        <li class="-item">
+        <a id="nav-users" href="http://stackoverflow.com/users" class="-link js-gps-track" data-gps-track="top_nav.click({is_current:false, location:2, destination:3})">Users</a>
+    </li>
+
+                </ol>
+            </nav>
+
+            <form id="search" action="http://stackoverflow.com/search" method="get" class="searchbar" autocomplete="off" role="search">
+                <svg viewBox="0 0 18 18" width="18" height="18" role="icon"><path fill-rule="evenodd" d="M12.864 11.32h-.813l-.288-.277A6.66 6.66 0 0 0 13.38 6.69a6.69 6.69 0 1 0-6.69 6.69 6.66 6.66 0 0 0 4.354-1.617l.278.288v.813L16.467 18 18 16.467l-5.136-5.146zm-6.174 0a4.625 4.625 0 0 1-4.632-4.63A4.625 4.625 0 0 1 6.69 2.058a4.625 4.625 0 0 1 4.63 4.632 4.625 4.625 0 0 1-4.63 4.63z"></path></svg>
+                <input name="q" type="text" placeholder="Search..." value="" tabindex="1" autocomplete="off" maxlength="240" class="f-input js-search-field">
+                <button type="submit" class="btn js-search-submit">
+                    <svg viewBox="0 0 18 18" width="18" height="18" role="icon"><path fill-rule="evenodd" d="M12.864 11.32h-.813l-.288-.277A6.66 6.66 0 0 0 13.38 6.69a6.69 6.69 0 1 0-6.69 6.69 6.66 6.66 0 0 0 4.354-1.617l.278.288v.813L16.467 18 18 16.467l-5.136-5.146zm-6.174 0a4.625 4.625 0 0 1-4.632-4.63A4.625 4.625 0 0 1 6.69 2.058a4.625 4.625 0 0 1 4.63 4.632 4.625 4.625 0 0 1-4.63 4.63z"></path></svg>
+                </button>
+            </form>
+
+        </div>
+        
+
+
+<div class="-actions">
+    <nav class="secondary-nav">
+        <div class="-dialog-container js-topbar-dialog-corral">
+
+
+    <div class="topbar-dialog siteSwitcher-dialog dno">
+        <div class="header">
+            <h3><a href="http://stackoverflow.com/">current community</a>
+            </h3>
+        </div>
+        <div class="modal-content current-site-container">
+            <ul class="current-site">
+                    <li>
+                            <div class="related-links">
+            <a href="http://stackoverflow.com/help" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:14 })">help</a>
+                    <a href="http://chat.stackoverflow.com/" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:6 })">chat</a>
+            </div>
+
+    <a href="http://stackoverflow.com/" class="current-site-link site-link js-gps-track" data-id="1" data-gps-track="site_switcher.click({ item_type:3 })">
+        <div class="site-icon favicon favicon-stackoverflow" title="Stack Overflow"></div>
+        Stack Overflow
+    </a>
+
+                    </li>
+                    <li class="related-site">
+                            <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                        
+    <a href="https://meta.stackoverflow.com/" class="site-link js-gps-track" data-id="552" data-gps-track="site.switch({ target_site:552, item_type:3 }),site_switcher.click({ item_type:4 })">
+        <div class="site-icon favicon favicon-stackoverflowmeta" title="Meta Stack Overflow"></div>
+        Meta Stack Overflow
+    </a>
+
+                    </li>
+            </ul>
+        </div>
+
+        <div class="header" id="your-communities-header">
+            <h3>
+your communities            </h3>
+
+        </div>
+        <div class="modal-content" id="your-communities-section">
+
+                <div class="call-to-login">
+<a href="https://stackoverflow.com/users/signup?ssrc=site_switcher&amp;returnurl=%2fusers%2fstory%2fcurrent&amp;amp;utm_source=stackoverflow.com&amp;amp;utm_medium=dev-story&amp;amp;utm_campaign=signup-redirect" class="login-link js-gps-track" data-gps-track="site_switcher.click({ item_type:10 })">Sign up</a> or <a href="https://stackoverflow.com/users/login?ssrc=site_switcher&amp;returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f5768998%2fhow-to-flip-background-image-using-css" class="login-link js-gps-track" data-gps-track="site_switcher.click({ item_type:11 })">log in</a> to customize your list.
+                </div>
+        </div>
+
+        <div class="header">
+            <h3><a href="https://stackexchange.com/sites">more stack exchange communities</a>
+            </h3>
+            <a href="https://stackoverflow.blog/" class="fr">company blog</a>
+        </div>
+        <div class="modal-content">
+                <div class="child-content"></div>
+        </div>        
+    </div>
+                <div class="topbar-dialog help-dialog js-help-dialog dno">
+        <div class="modal-content">
+            <ul>
+                                    <li>
+                        <a href="http://stackoverflow.com/tour" class="js-gps-track" data-gps-track="help_popup.click({ item_type:1 })">
+                            Tour
+                            <span class="item-summary">
+                                Start here for a quick overview of the site
+                            </span>
+                        </a>
+                    </li>
+                <li>
+                    <a href="http://stackoverflow.com/help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:4 })">
+                        Help Center
+                        <span class="item-summary">
+                            Detailed answers to any questions you might have
+                        </span>
+                    </a>
+                </li>
+                        <li>
+                            <a href="https://meta.stackoverflow.com/" class="js-gps-track" data-gps-track="help_popup.click({ item_type:2 })">
+                                Meta
+                                <span class="item-summary">
+                                    Discuss the workings and policies of this site
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://stackoverflow.com/company/about" class="js-gps-track" data-gps-track="help_popup.click({ item_type:6 })">
+                                About Us
+                                <span class="item-summary">
+                                    Learn more about Stack Overflow the company
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.stackoverflowbusiness.com/?ref=topbar_help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:7 })">
+                                Business
+                                <span class="item-summary">
+                                    Learn more about hiring developers or posting ads with us
+                                </span>
+                            </a>
+                        </li>
+            </ul>
+        </div>
+    </div>
+
+        </div>
+        <ol class="-list">
+            
+    <li class="-item"><a href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css#" class="-link js-help-button" title="Help Center and other resources">
+        <svg viewBox="0 0 18 18" width="18" height="18" role="icon"><path fill-rule="evenodd" d="M9 0a9 9 0 1 0 .001 18.001A9 9 0 0 0 9 0zm.812 13.126c-.02.716-.55 1.157-1.238 1.137-.659-.02-1.177-.49-1.157-1.209.02-.715.566-1.17 1.225-1.15.691.021 1.194.507 1.17 1.222zm1.956-5.114c-.168.237-.546.542-1.02.912l-.527.361c-.257.197-.417.43-.502.695-.044.141-.076.507-.084.752-.004.048-.032.156-.181.156H7.883c-.165 0-.185-.096-.18-.144.023-.667.12-1.218.397-1.66.374-.594 1.426-1.221 1.426-1.221.161-.12.286-.25.382-.39.177-.24.321-.51.321-.8 0-.333-.08-.65-.293-.915-.249-.31-.518-.458-1.036-.458-.51 0-.808.257-1.021.594-.213.338-.177.735-.177 1.097H5.746c0-1.366.357-2.238 1.112-2.752.51-.35 1.162-.502 1.921-.502.996 0 1.788.184 2.487.715.647.49.988 1.181.988 2.113 0 .575-.2 1.057-.486 1.447z"></path></svg>
+    </a></li>
+                <li class="-item">
+        <a href="https://stackexchange.com/" class="-link js-site-switcher-button js-gps-track" data-gps-track="site_switcher.show" title="A list of all 167 Stack Exchange sites">
+            <svg viewBox="0 0 18 19" width="18" height="19" role="icon"><path fill-rule="evenodd" d="M0 14a2 2 0 0 0 2 2h10v3l3-3h1a2 2 0 0 0 2-2v-2H0v2zM16 0H2a2 2 0 0 0-2 2v2h18V2a2 2 0 0 0-2-2zM0 6h18v4H0V6z"></path></svg>
+        </a>
+    </li>
+
+
+        </ol>
+    </nav>
+        <div class="-ctas">
+                    <a href="https://stackoverflow.com/users/login?ssrc=head&amp;returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f5768998%2fhow-to-flip-background-image-using-css" class="login-link btn-clear" rel="nofollow">Log In</a>
+                        <a href="https://stackoverflow.com/users/signup?ssrc=head&amp;returnurl=%2fusers%2fstory%2fcurrent&amp;utm_source=stackoverflow.com&amp;utm_medium=dev-story&amp;utm_campaign=signup-redirect" class="login-link btn" rel="nofollow">Sign Up</a>
+
+        </div>
+</div>
+    </div>
+</header>
+
+    <script>
+        StackExchange.ready(function () { StackExchange.topbar.init(); });
+            StackExchange.scrollPadding.setPaddingTop(60, 10);     </script>
+
+    <div class="container">
+        
+
+
+        <div id="content" class="snippet-hidden">
+
+
+
+            
+
+<div itemscope="" itemtype="http://schema.org/Question">
+    <link itemprop="image" href="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+
+
+<div id="herobox" class="alternate">
+    <div class="test"></div>
+        <div id="close">
+            <a title="click to minimize"><span>x</span> Dismiss</a>
+        </div>
+    <div class="content">
+        <b>Join the Stack Overflow Community</b>
+        <div class="separator"></div>
+        <div class="blurb">
+            Stack Overflow is a community of 7.0 million programmers, just like you, helping each other.
+                <br>
+Join them; it only takes a minute:                <br>
+        </div>
+        <a href="http://stackoverflow.com/users/signup?ssrc=hero&amp;returnurl=%2fusers%2fstory%2fcurrent&amp;amp;utm_source=stackoverflow.com&amp;amp;utm_medium=dev-story&amp;amp;utm_campaign=signup-redirect" id="tell-me-more" class="button">Sign up</a>
+    </div>
+</div>
+<script>
+    StackExchange.ready(function () {
+
+        var location = 0;
+        if ($("body").hasClass("questions-page")) {
+            location = 1;;
+        } else if ($("body").hasClass("question-page")) {
+            location = 1;;
+        } else if ($("body").hasClass("faq-page")) {
+            location = 5;;
+        } else if ($("body").hasClass("home-page")) {
+            location = 3;;
+        }
+        
+        $('#tell-me-more').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: 'cta', location: location }, true);
+            });
+        });
+        
+        $('#herobox #close').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: "minimize", location: location }, true);
+            });
+            
+            $.cookie("hero", "mini", { path: "/", expires: 365 });
+            $.ajax({
+                url: "/hero-mini",
+                success: function (data) {
+                    $("#herobox").fadeOut("fast", function () {
+                        $("#herobox").replaceWith(data);
+                        $("#herobox-mini").fadeIn("fast");
+                    });
+                }
+            });
+            return false;
+        });
+    });
+
+</script>			<div id="question-header">
+                <h1 itemprop="name"><a href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css" class="question-hyperlink">How to flip background image using CSS?</a></h1>
+
+            
+<div class="aside-cta" role="navigation" aria-label="ask new question">
+    <a href="http://stackoverflow.com/questions/ask" class="btn-outlined">Ask Question</a>
+</div>
+		</div>
+			<div id="mainbar" role="main" aria-label="question and answers">
+
+			
+
+<div class="question" data-questionid="5768998" id="question">
+
+    <script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8277,"adzerk1160430730",4).setZone(43); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk1160430730"><a href="http://engine.adzerk.net/r?e=eyJhdiI6NDE0LCJhdCI6NCwiYnQiOjAsImNtIjo0NzE0OTMsImNoIjoxMTc4LCJjayI6e30sImNyIjoxNjI3NzYzLCJkaSI6IjRkNzE2ODVmNGI2ZjRlNjk5MTc5ZWE0ZDJjMTU0OGRhIiwiZG0iOjEsImZjIjoxOTI0NDQyLCJmbCI6MjE0MjMxMiwiaXAiOiIxNTQuNzAuMzkuMTkiLCJrdyI6ImNzcyxjc3MzLG1vYmlsZS13ZWJraXQseC1wZXJzb25hLWZyb250ZW5kIiwibnciOjIyLCJwYyI6MCwiZWMiOjAsInByIjoxNjA0LCJydCI6MSwicmYiOiJodHRwczovL3d3dy5nb29nbGUuY29tLyIsInNiIjoiaS0wMGMzNGQ5YjNjOTFkYTkxNyIsInNwIjoyMjk4NSwic3QiOjgyNzcsInVrIjoidWUxLWNhMTA5MDY1ZTNjZTQ3ODQ4ZWZhYTAxMDUxODU3MWY4Iiwiem4iOjQzLCJ0cyI6MTQ5MjUzMzM0NjYyMiwiYmYiOnRydWUsInBuIjoiYWR6ZXJrMTE2MDQzMDczMCIsInVyIjoiaHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL2pvYnM_dXRtX3NvdXJjZT13ZWJzaXRlJnV0bV9tZWRpdW09YmFubmVyJnV0bV9jb250ZW50PWxlYWRlcmJvYXJkXzImdXRtX2NhbXBhaWduPWhvdXNlX2Fkc19ob3VzZV9hZHNfUk9TX1NPIn0&amp;s=Z144unJxxQx0L3wW7YD2o91DYPk" rel="nofollow" target="_blank" title=""><img src="http://static.adzerk.net/Advertisers/6768ddb6a63e482c9c31155cdde7af9a.png" title="" alt="" border="0" width="728" height="90" style="display: none !important;"></a><img height="0px" width="0px" border="0" style="position: absolute; display: none !important;" src="http://engine.adzerk.net/i.gif?e=eyJhdiI6NDE0LCJhdCI6NCwiYnQiOjAsImNtIjo0NzE0OTMsImNoIjoxMTc4LCJjayI6e30sImNyIjoxNjI3NzYzLCJkaSI6IjRkNzE2ODVmNGI2ZjRlNjk5MTc5ZWE0ZDJjMTU0OGRhIiwiZG0iOjEsImZjIjoxOTI0NDQyLCJmbCI6MjE0MjMxMiwiaXAiOiIxNTQuNzAuMzkuMTkiLCJrdyI6ImNzcyxjc3MzLG1vYmlsZS13ZWJraXQseC1wZXJzb25hLWZyb250ZW5kIiwibnciOjIyLCJwYyI6MCwiZWMiOjAsInByIjoxNjA0LCJydCI6MSwicmYiOiJodHRwczovL3d3dy5nb29nbGUuY29tLyIsInNiIjoiaS0wMGMzNGQ5YjNjOTFkYTkxNyIsInNwIjoyMjk4NSwic3QiOjgyNzcsInVrIjoidWUxLWNhMTA5MDY1ZTNjZTQ3ODQ4ZWZhYTAxMDUxODU3MWY4Iiwiem4iOjQzLCJ0cyI6MTQ5MjUzMzM0NjYyMywiYmYiOnRydWUsInBuIjoiYWR6ZXJrMTE2MDQzMDczMCIsImZxIjowfQ&amp;s=2qb7uHA0qmBZ_eY_qNNK0TpGUcU"></div>    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="5768998">
+        <a class="vote-up-off" title="This question shows research effort; it is useful and clear">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">155</span>
+        <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful">down vote</a>
+
+        <a class="star-off" href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css#">favorite</a>
+        <div class="favoritecount"><b>36</b></div>
+
+
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="text">
+
+<p>How to flip any background image using CSS? Is it possible?</p>
+
+<p>currenty I'm using this arrow image in a <code>background-image</code> of <code>li</code> in css</p>
+
+<p><img src="./css3 - How to flip background image using CSS_ - Stack Overflow_files/ah0iN.png" alt="enter image description here"></p>
+
+<p>On :<code>visited</code> I need to flip this arrow horizontally. I can do this to make another image of arrow <strong>BUT</strong> I'm just curious to  know is it possible to flip the image in CSS for <code>:visited</code></p>
+    </div>
+    <div class="post-taglist">
+        <a href="http://stackoverflow.com/questions/tagged/css" class="post-tag js-gps-track" title="show questions tagged &#39;css&#39;" rel="tag">css</a> <a href="http://stackoverflow.com/questions/tagged/css3" class="post-tag js-gps-track" title="show questions tagged &#39;css3&#39;" rel="tag">css3</a> <a href="http://stackoverflow.com/questions/tagged/mobile-webkit" class="post-tag js-gps-track" title="show questions tagged &#39;mobile-webkit&#39;" rel="tag">mobile-webkit</a> 
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/q/5768998" title="short permalink to this question" class="short-link" id="link-post-5768998">share</a></div>        
+    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://stackoverflow.com/posts/5768998/revisions" title="show all edits to this post">edited <span title="2011-04-24 06:33:00Z" class="relativetime">Apr 24 '11 at 6:33</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        
+        <div class="-flair">
+            
+        </div>
+    </div>
+</div>    </td>
+    <td class="post-signature owner">
+        <div class="user-info user-hover">
+    <div class="user-action-time">
+        asked <span title="2011-04-24 06:13:22Z" class="relativetime">Apr 24 '11 at 6:13</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/84201/jitendra-vyas"><div class="gravatar-wrapper-32"><img src="./css3 - How to flip background image using CSS_ - Stack Overflow_files/5cce99e9bf6154703d8ecdf474a750bd" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/84201/jitendra-vyas">Jitendra Vyas</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 47,038" dir="ltr">47k</span><span title="166 gold badges"><span class="badge1"></span><span class="badgecount">166</span></span><span title="464 silver badges"><span class="badge2"></span><span class="badgecount">464</span></span><span title="746 bronze badges"><span class="badge3"></span><span class="badgecount">746</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+</td>
+        </tr>
+                    
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-5768998" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-12544432" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">good question! this could come in handy in a lot of different instances.</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/1239056/ashbrad" title="427 reputation" class="comment-user">AshBrad</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css#comment12544432_5768998"><span title="2012-03-23 16:57:30Z" class="relativetime-clean">Mar 23 '12 at 16:57</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-12554241" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@AshBrad - Thanks for comments. yes it could be useful in many conditions</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/84201/jitendra-vyas" title="47,038 reputation" class="comment-user owner">Jitendra Vyas</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css#comment12554241_5768998"><span title="2012-03-24 06:05:06Z" class="relativetime-clean">Mar 24 '12 at 6:05</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-5768998" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid answering questions in comments.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css#" onclick=""></a>
+        </div>         
+    </td>
+</tr>        </tbody></table>
+</div>
+
+			<div id="answers">
+
+				<a name="tab-top"></a>
+				<div id="answers-header">
+					<div class="subheader answers-subheader">
+						<h2>
+								5 Answers
+                                <span style="display:none;" itemprop="answerCount">5</span>
+						</h2>
+						<div>
+							<div id="tabs">
+        <a href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css?answertab=active#tab-top" data-nav-xhref="" title="Answers with the latest activity first" data-value="active" data-shortcut="A">
+            active</a>
+        <a href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css?answertab=oldest#tab-top" data-nav-xhref="" title="Answers in the order they were provided" data-value="oldest" data-shortcut="O">
+            oldest</a>
+        <a class="youarehere" href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css?answertab=votes#tab-top" data-nav-xhref="" title="Answers with the highest score first" data-value="votes" data-shortcut="V">
+            votes</a>
+</div>
+						</div>
+					</div>    
+				</div>    
+
+
+
+
+  
+<a name="5769010"></a>
+<div id="answer-5769010" class="answer" data-answerid="5769010" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="5769010">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">167</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>You can flip it horizontally with CSS...</p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="pln">a</span><span class="pun">:</span><span class="pln">visited </span><span class="pun">{</span><span class="pln">
+    </span><span class="pun">-</span><span class="pln">moz</span><span class="pun">-</span><span class="pln">transform</span><span class="pun">:</span><span class="pln"> scaleX</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">-</span><span class="pln">o</span><span class="pun">-</span><span class="pln">transform</span><span class="pun">:</span><span class="pln"> scaleX</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">transform</span><span class="pun">:</span><span class="pln"> scaleX</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+    transform</span><span class="pun">:</span><span class="pln"> scaleX</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+    filter</span><span class="pun">:</span><span class="pln"> </span><span class="typ">FlipH</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">-</span><span class="pln">ms</span><span class="pun">-</span><span class="pln">filter</span><span class="pun">:</span><span class="pln"> </span><span class="str">"FlipH"</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+
+<p><a href="http://jsfiddle.net/alexdickson/btDKa/" rel="noreferrer">jsFiddle</a>.</p>
+
+<p>If you want to flip vertically instead...</p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="pln">a</span><span class="pun">:</span><span class="pln">visited </span><span class="pun">{</span><span class="pln">
+    </span><span class="pun">-</span><span class="pln">moz</span><span class="pun">-</span><span class="pln">transform</span><span class="pun">:</span><span class="pln"> scaleY</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">-</span><span class="pln">o</span><span class="pun">-</span><span class="pln">transform</span><span class="pun">:</span><span class="pln"> scaleY</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">transform</span><span class="pun">:</span><span class="pln"> scaleY</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+    transform</span><span class="pun">:</span><span class="pln"> scaleY</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+    filter</span><span class="pun">:</span><span class="pln"> </span><span class="typ">FlipV</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">-</span><span class="pln">ms</span><span class="pun">-</span><span class="pln">filter</span><span class="pun">:</span><span class="pln"> </span><span class="str">"FlipV"</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+
+<p><a href="http://css-tricks.com/snippets/css/flip-an-image/" rel="noreferrer">Source</a>.</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/5769010" title="short permalink to this answer" class="short-link" id="link-post-5769010">share</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://stackoverflow.com/posts/5769010/revisions" title="show all edits to this post">edited <span title="2014-05-14 10:54:12Z" class="relativetime">May 14 '14 at 10:54</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        
+        <div class="-flair">
+            
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2011-04-24 06:16:17Z" class="relativetime">Apr 24 '11 at 6:16</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/31671/alex"><div class="gravatar-wrapper-32"><img src="./css3 - How to flip background image using CSS_ - Stack Overflow_files/xEJu4.jpg" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/31671/alex">alex</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 283,409" dir="ltr">283k</span><span title="138 gold badges"><span class="badge1"></span><span class="badgecount">138</span></span><span title="684 silver badges"><span class="badge2"></span><span class="badgecount">684</span></span><span title="839 bronze badges"><span class="badge3"></span><span class="badgecount">839</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-5769010" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="7" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-6608325" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">If I'm only considering Web-kit browsers then only <code>-webkit-transform: scaleX(-1);</code> is enough?</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/84201/jitendra-vyas" title="47,038 reputation" class="comment-user owner">Jitendra Vyas</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css#comment6608325_5769010"><span title="2011-04-24 06:32:18Z" class="relativetime-clean">Apr 24 '11 at 6:32</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-6608337" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@Jitendra It should be, plus the non vendor prefixed property.</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/31671/alex" title="283,409 reputation" class="comment-user">alex</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css#comment6608337_5769010"><span title="2011-04-24 06:34:21Z" class="relativetime-clean">Apr 24 '11 at 6:34</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-6608370" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="warm">8</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@alex - one problem in this. it's flipping the text also which is inside the <code>&lt;a&gt;</code> and I only want to flip the background image. The code you give is to flip the whole element</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/84201/jitendra-vyas" title="47,038 reputation" class="comment-user owner">Jitendra Vyas</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css#comment6608370_5769010"><span title="2011-04-24 06:41:39Z" class="relativetime-clean">Apr 24 '11 at 6:41</span></a></span>
+                        <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-6608380" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@Jitendra It doesn't look like you can just flip the background image. You could place the icon in a <code>span</code> and then flip that, however.</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/31671/alex" title="283,409 reputation" class="comment-user">alex</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css#comment6608380_5769010"><span title="2011-04-24 06:43:28Z" class="relativetime-clean">Apr 24 '11 at 6:43</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-6608403" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@alex - OK the if i use this code <code>&lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;text&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</code> it's flipping the text too so what will be opposite of your give code to unflip the text so i can write unflip code for <code>li a span {  }</code> in css</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/84201/jitendra-vyas" title="47,038 reputation" class="comment-user owner">Jitendra Vyas</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css#comment6608403_5769010"><span title="2011-04-24 06:47:37Z" class="relativetime-clean">Apr 24 '11 at 6:47</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-5769010" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link  dno" title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link " title="expand to show all comments on this post" href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css#" onclick="">show <b>7</b> more comments</a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+<script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8277,"adzerk572226798",4).setZone(44); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk572226798"><a href="http://engine.adzerk.net/r?e=eyJhdiI6NDE0LCJhdCI6NCwiYnQiOjAsImNtIjo1MTc3NTcsImNoIjoxMTc4LCJjayI6e30sImNyIjoxNjM4OTgyLCJkaSI6ImI3YTk0ZWZmN2EyYTQwODU5ZWFjN2I1MmJjN2U0ODVkIiwiZG0iOjEsImZjIjoyMTY0NTQ0LCJmbCI6MjYzMTU3OSwiaXAiOiIxNTQuNzAuMzkuMTkiLCJrdyI6ImNzcyxjc3MzLG1vYmlsZS13ZWJraXQseC1wZXJzb25hLWZyb250ZW5kIiwibWsiOiJ4LXBlcnNvbmEtZnJvbnRlbmQiLCJudyI6MjIsInBjIjowLCJlYyI6MCwicHIiOjE2MDQsInJ0IjoyLCJyZiI6Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vIiwic2IiOiJpLTAwYzM0ZDliM2M5MWRhOTE3Iiwic3AiOjIyOTg1LCJzdCI6ODI3NywidWsiOiJ1ZTEtY2ExMDkwNjVlM2NlNDc4NDhlZmFhMDEwNTE4NTcxZjgiLCJ6biI6NDQsInRzIjoxNDkyNTMzMzQ2NjI0LCJiZiI6dHJ1ZSwicG4iOiJhZHplcms1NzIyMjY3OTgiLCJ1ciI6Imh0dHA6Ly9zdGFja292ZXJmbG93LmNvbS9qb2JzP3V0bV9zb3VyY2U9d2Vic2l0ZSZ1dG1fbWVkaXVtPWJhbm5lciZ1dG1fY29udGVudD1sZWFkZXJib2FyZF82JnV0bV9jYW1wYWlnbj1ob3VzZV9hZHNfaG91c2VfYWRzX1JPU19TTyJ9&amp;s=ZnNudLbjWAERYtPUvS1Bxrs-118" rel="nofollow" target="_blank" title=""><img src="http://static.adzerk.net/Advertisers/6659d543875d40bfb2e08cde06af5a6f.png" title="" alt="" border="0" width="728" height="90" style="display: none !important;"></a><img height="0px" width="0px" border="0" style="position: absolute; display: none !important;" src="http://engine.adzerk.net/i.gif?e=eyJhdiI6NDE0LCJhdCI6NCwiYnQiOjAsImNtIjo1MTc3NTcsImNoIjoxMTc4LCJjayI6e30sImNyIjoxNjM4OTgyLCJkaSI6ImI3YTk0ZWZmN2EyYTQwODU5ZWFjN2I1MmJjN2U0ODVkIiwiZG0iOjEsImZjIjoyMTY0NTQ0LCJmbCI6MjYzMTU3OSwiaXAiOiIxNTQuNzAuMzkuMTkiLCJrdyI6ImNzcyxjc3MzLG1vYmlsZS13ZWJraXQseC1wZXJzb25hLWZyb250ZW5kIiwibWsiOiJ4LXBlcnNvbmEtZnJvbnRlbmQiLCJudyI6MjIsInBjIjowLCJlYyI6MCwicHIiOjE2MDQsInJ0IjoyLCJyZiI6Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vIiwic2IiOiJpLTAwYzM0ZDliM2M5MWRhOTE3Iiwic3AiOjIyOTg1LCJzdCI6ODI3NywidWsiOiJ1ZTEtY2ExMDkwNjVlM2NlNDc4NDhlZmFhMDEwNTE4NTcxZjgiLCJ6biI6NDQsInRzIjoxNDkyNTMzMzQ2NjI0LCJiZiI6dHJ1ZSwicG4iOiJhZHplcms1NzIyMjY3OTgiLCJmcSI6MH0&amp;s=I7NhUz4iDmR8gFR7DaPWPPu6_ZY"></div>
+  
+<a name="5769230"></a>
+<div id="answer-5769230" class="answer accepted-answer" data-answerid="5769230" itemscope="" itemtype="http://schema.org/Answer" itemprop="acceptedAnswer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="5769230">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">47</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+        <span class="vote-accepted-on load-accepted-answer-date" title="loading when this answer was accepted...">accepted</span>
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>I found I way to flip only the background not whole element after seeing a clue to flip in Alex's answer. Thanks alex for your answer</p>
+
+<p>HTML</p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"prev"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">Previous</span><span class="tag">&lt;/a&gt;&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"next"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">Next</span><span class="tag">&lt;/a&gt;&lt;/div&gt;</span></code></pre>
+
+<p>CSS</p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="pln">   </span><span class="pun">.</span><span class="kwd">next</span><span class="pln"> a</span><span class="pun">,</span><span class="pln"> </span><span class="pun">.</span><span class="pln">prev a </span><span class="pun">{</span><span class="pln">width</span><span class="pun">:</span><span class="lit">200px</span><span class="pun">;</span><span class="pln">background</span><span class="pun">:#</span><span class="pln">fff</span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">.</span><span class="kwd">next</span><span class="pln"> </span><span class="pun">{</span><span class="kwd">float</span><span class="pun">:</span><span class="pln">left</span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">prev </span><span class="pun">{</span><span class="kwd">float</span><span class="pun">:</span><span class="pln">right</span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">prev a</span><span class="pun">:</span><span class="pln">before</span><span class="pun">,</span><span class="pln">
+    </span><span class="pun">.</span><span class="kwd">next</span><span class="pln"> a</span><span class="pun">:</span><span class="pln">before </span><span class="pun">{</span><span class="pln">
+        content</span><span class="pun">:</span><span class="str">""</span><span class="pun">;</span><span class="pln">
+        width</span><span class="pun">:</span><span class="lit">16px</span><span class="pun">;</span><span class="pln">
+        height</span><span class="pun">:</span><span class="lit">16px</span><span class="pun">;</span><span class="pln">
+        margin</span><span class="pun">:</span><span class="lit">0</span><span class="pln"> </span><span class="lit">5px</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln">
+        background</span><span class="pun">:</span><span class="pln">url</span><span class="pun">(</span><span class="pln">http</span><span class="pun">:</span><span class="com">//i.stack.imgur.com/ah0iN.png) no-repeat 0 0; display:inline-block</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+
+    </span><span class="pun">.</span><span class="kwd">next</span><span class="pln"> a</span><span class="pun">:</span><span class="pln">before </span><span class="pun">{</span><span class="pln">
+        margin</span><span class="pun">:</span><span class="lit">0</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="lit">5px</span><span class="pun">;</span><span class="pln">
+        transform</span><span class="pun">:</span><span class="pln">scaleX</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+
+    </span><span class="pun">}</span></code></pre>
+
+<p>See example here <a href="http://jsfiddle.net/qngrf/807/" rel="noreferrer">http://jsfiddle.net/qngrf/807/</a></p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/5769230" title="short permalink to this answer" class="short-link" id="link-post-5769230">share</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://stackoverflow.com/posts/5769230/revisions" title="show all edits to this post">edited <span title="2016-10-24 08:03:02Z" class="relativetime">Oct 24 '16 at 8:03</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        
+        <div class="-flair">
+            
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature owner">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2011-04-24 07:16:54Z" class="relativetime">Apr 24 '11 at 7:16</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/84201/jitendra-vyas"><div class="gravatar-wrapper-32"><img src="./css3 - How to flip background image using CSS_ - Stack Overflow_files/5cce99e9bf6154703d8ecdf474a750bd" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/84201/jitendra-vyas">Jitendra Vyas</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 47,038" dir="ltr">47k</span><span title="166 gold badges"><span class="badge1"></span><span class="badgecount">166</span></span><span title="464 silver badges"><span class="badge2"></span><span class="badgecount">464</span></span><span title="746 bronze badges"><span class="badge3"></span><span class="badgecount">746</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-5769230" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-12544418" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">This worked wonders! Very cool. Thanks</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/1239056/ashbrad" title="427 reputation" class="comment-user">AshBrad</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css#comment12544418_5769230"><span title="2012-03-23 16:56:52Z" class="relativetime-clean">Mar 23 '12 at 16:56</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-22451459" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="warm">7</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@Jitendra  Can you please check Jsfiddle URL. I think it is not having the same code you posted in your answer + its not working..</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/816213/sachinjain024" title="11,939 reputation" class="comment-user">sachinjain024</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css#comment22451459_5769230"><span title="2013-04-03 14:45:19Z" class="relativetime-clean">Apr 3 '13 at 14:45</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-40332677" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">jsfiddle code you post is fliping text to? is it what you want, or just background image?</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/2908059/mandza" title="170 reputation" class="comment-user">mandza</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css#comment40332677_5769230"><span title="2014-09-11 13:00:21Z" class="relativetime-clean">Sep 11 '14 at 13:00</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-49445870" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">your jsfiddle is not the same as the code , can u please update it ?</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/859154/royi" title="60,522 reputation" class="comment-user">Royi</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css#comment49445870_5769230"><span title="2015-06-07 12:49:22Z" class="relativetime-clean">Jun 7 '15 at 12:49</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-62338665" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@JitendraVyas hello from 2016! I was considering suggesting an edit to fix the jsfiddle URL as it still links to different code than is in your answer here - care to edit the post or remove the link? Thanks :)</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/846480/jammypeach" title="4,791 reputation" class="comment-user">jammypeach</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css#comment62338665_5769230"><span title="2016-05-24 14:22:11Z" class="relativetime-clean">May 24 '16 at 14:22</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-5769230" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="21443680"></a>
+<div id="answer-21443680" class="answer" data-answerid="21443680" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="21443680">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">15</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>According to w3schools:
+<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" rel="noreferrer">http://www.w3schools.com/cssref/css3_pr_transform.asp</a></p>
+
+<blockquote>
+  <p>The transform property is supported in Internet Explorer 10, Firefox, and Opera.
+  Internet Explorer 9 supports an alternative, the -ms-transform property (2D transforms only).
+  Safari and Chrome support an alternative, the -webkit-transform property (3D and 2D transforms).
+  Opera supports 2D transforms only.</p>
+</blockquote>
+
+<p>This is a 2D transform, so it should work, with the vendor prefixes, on Chrome, Firefox, Opera, Safari, and IE9+.</p>
+
+<p>Other answers used :before to stop it from flipping the inner content. I used this on my footer (to vertically-mirror the image from my header):</p>
+
+<p>HTML:</p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="tag">&lt;footer&gt;</span><span class="pln">
+</span><span class="tag">&lt;p&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"page"</span><span class="tag">&gt;</span><span class="pln">Footer Link</span><span class="tag">&lt;/a&gt;&lt;/p&gt;</span><span class="pln">
+</span><span class="tag">&lt;p&gt;</span><span class="pln">&amp;copy; 2014 Company</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+</span><span class="tag">&lt;/footer&gt;</span></code></pre>
+
+<p>CSS:</p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="pln">footer </span><span class="pun">{</span><span class="pln">
+background</span><span class="pun">:</span><span class="pln">url</span><span class="pun">(</span><span class="str">/img/</span><span class="pln">headerbg</span><span class="pun">.</span><span class="pln">png</span><span class="pun">)</span><span class="pln"> repeat</span><span class="pun">-</span><span class="pln">x </span><span class="lit">0</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln">
+
+</span><span class="com">/* flip background vertically */</span><span class="pln">
+</span><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">transform</span><span class="pun">:</span><span class="pln">scaleY</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">-</span><span class="pln">moz</span><span class="pun">-</span><span class="pln">transform</span><span class="pun">:</span><span class="pln">scaleY</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">-</span><span class="pln">ms</span><span class="pun">-</span><span class="pln">transform</span><span class="pun">:</span><span class="pln">scaleY</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">-</span><span class="pln">o</span><span class="pun">-</span><span class="pln">transform</span><span class="pun">:</span><span class="pln">scaleY</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+transform</span><span class="pun">:</span><span class="pln">scaleY</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="com">/* undo the vertical flip for all child elements */</span><span class="pln">
+footer </span><span class="pun">*</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+</span><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">transform</span><span class="pun">:</span><span class="pln">scaleY</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">-</span><span class="pln">moz</span><span class="pun">-</span><span class="pln">transform</span><span class="pun">:</span><span class="pln">scaleY</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">-</span><span class="pln">ms</span><span class="pun">-</span><span class="pln">transform</span><span class="pun">:</span><span class="pln">scaleY</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">-</span><span class="pln">o</span><span class="pun">-</span><span class="pln">transform</span><span class="pun">:</span><span class="pln">scaleY</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+transform</span><span class="pun">:</span><span class="pln">scaleY</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+
+<p>So you end up flipping the element and then re-flipping all its children. Works with nested elements, too.</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/21443680" title="short permalink to this answer" class="short-link" id="link-post-21443680">share</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2014-01-29 22:06:19Z" class="relativetime">Jan 29 '14 at 22:06</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/2990349/jdforsythe"><div class="gravatar-wrapper-32"><img src="./css3 - How to flip background image using CSS_ - Stack Overflow_files/picture" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/2990349/jdforsythe">jdforsythe</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">630</span><span title="5 silver badges"><span class="badge2"></span><span class="badgecount">5</span></span><span title="12 bronze badges"><span class="badge3"></span><span class="badgecount">12</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-21443680" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-55483523" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Thanks for the answer! This one worked best for me, since the others either flipped all the children too or required a more complex trick to reverse the flip.</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/1727449/salgat" title="125 reputation" class="comment-user">Salgat</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css#comment55483523_21443680"><span title="2015-11-22 20:06:45Z" class="relativetime-clean">Nov 22 '15 at 20:06</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-21443680" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="5770943"></a>
+<div id="answer-5770943" class="answer" data-answerid="5770943" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="5770943">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">9</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>For what it's worth, for Gecko-based browsers you can't condition this thing off of <code>:visited</code> due to the resulting privacy leaks.  See <a href="http://hacks.mozilla.org/2010/03/privacy-related-changes-coming-to-css-vistited/" rel="noreferrer">http://hacks.mozilla.org/2010/03/privacy-related-changes-coming-to-css-vistited/</a></p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/5770943" title="short permalink to this answer" class="short-link" id="link-post-5770943">share</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2011-04-24 14:04:42Z" class="relativetime">Apr 24 '11 at 14:04</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/720912/boris-zbarsky"><div class="gravatar-wrapper-32"><img src="./css3 - How to flip background image using CSS_ - Stack Overflow_files/8b86a9efd50a1c38bc4d3a0e47cd5979" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/720912/boris-zbarsky">Boris Zbarsky</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 29,170" dir="ltr">29.2k</span><span title="3 gold badges"><span class="badge1"></span><span class="badgecount">3</span></span><span title="36 silver badges"><span class="badge2"></span><span class="badgecount">36</span></span><span title="46 bronze badges"><span class="badge3"></span><span class="badgecount">46</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-5770943" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-6611480" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Thanks for this info +1</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/84201/jitendra-vyas" title="47,038 reputation" class="comment-user owner">Jitendra Vyas</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css#comment6611480_5770943"><span title="2011-04-24 15:22:12Z" class="relativetime-clean">Apr 24 '11 at 15:22</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-14883814" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Thanks for your info</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/611264/k6t" title="947 reputation" class="comment-user">K6t</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css#comment14883814_5770943"><span title="2012-07-03 12:02:18Z" class="relativetime-clean">Jul 3 '12 at 12:02</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-5770943" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="32674467"></a>
+<div id="answer-32674467" class="answer" data-answerid="32674467" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="32674467">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">3</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>You can flip both vertical and horizontal <strong>at the same time</strong></p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="pln">    </span><span class="pun">-</span><span class="pln">moz</span><span class="pun">-</span><span class="pln">transform</span><span class="pun">:</span><span class="pln"> scaleX</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> scaleY</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">-</span><span class="pln">o</span><span class="pun">-</span><span class="pln">transform</span><span class="pun">:</span><span class="pln"> scaleX</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> scaleY</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">transform</span><span class="pun">:</span><span class="pln"> scaleX</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> scaleY</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+    transform</span><span class="pun">:</span><span class="pln"> scaleX</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> scaleY</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span></code></pre>
+
+<p>And with the <strong>transition</strong> property you can get a cool flip</p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="pln">    </span><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">transition</span><span class="pun">:</span><span class="pln"> transform </span><span class="pun">.</span><span class="lit">4s</span><span class="pln"> ease</span><span class="pun">-</span><span class="kwd">out</span><span class="pln"> </span><span class="lit">0ms</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">-</span><span class="pln">moz</span><span class="pun">-</span><span class="pln">transition</span><span class="pun">:</span><span class="pln"> transform </span><span class="pun">.</span><span class="lit">4s</span><span class="pln"> ease</span><span class="pun">-</span><span class="kwd">out</span><span class="pln"> </span><span class="lit">0ms</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">-</span><span class="pln">o</span><span class="pun">-</span><span class="pln">transition</span><span class="pun">:</span><span class="pln"> transform </span><span class="pun">.</span><span class="lit">4s</span><span class="pln"> ease</span><span class="pun">-</span><span class="kwd">out</span><span class="pln"> </span><span class="lit">0ms</span><span class="pun">;</span><span class="pln">
+    transition</span><span class="pun">:</span><span class="pln"> transform </span><span class="pun">.</span><span class="lit">4s</span><span class="pln"> ease</span><span class="pun">-</span><span class="kwd">out</span><span class="pln"> </span><span class="lit">0ms</span><span class="pun">;</span><span class="pln">
+    transition</span><span class="pun">-</span><span class="kwd">property</span><span class="pun">:</span><span class="pln"> transform</span><span class="pun">;</span><span class="pln">
+    transition</span><span class="pun">-</span><span class="pln">duration</span><span class="pun">:</span><span class="pln"> </span><span class="pun">.</span><span class="lit">4s</span><span class="pun">;</span><span class="pln">
+    transition</span><span class="pun">-</span><span class="pln">timing</span><span class="pun">-</span><span class="kwd">function</span><span class="pun">:</span><span class="pln"> ease</span><span class="pun">-</span><span class="kwd">out</span><span class="pun">;</span><span class="pln">
+    transition</span><span class="pun">-</span><span class="pln">delay</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0ms</span><span class="pun">;</span></code></pre>
+
+<p>Actually it flips the <strong>whole</strong> element, not just the <code>background-image</code></p>
+
+<p><strong>SNIPPET</strong></p>
+
+<p></p><div class="snippet" data-lang="js" data-hide="false">
+<div class="snippet-code">
+<pre class="snippet-code-js lang-js prettyprint prettyprinted"><code><span class="kwd">function</span><span class="pln"> flip</span><span class="pun">(){</span><span class="pln">
+	</span><span class="kwd">var</span><span class="pln"> myDiv </span><span class="pun">=</span><span class="pln"> document</span><span class="pun">.</span><span class="pln">getElementById</span><span class="pun">(</span><span class="str">'myDiv'</span><span class="pun">);</span><span class="pln">
+	</span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">myDiv</span><span class="pun">.</span><span class="pln">className </span><span class="pun">==</span><span class="pln"> </span><span class="str">'myFlipedDiv'</span><span class="pun">){</span><span class="pln">
+		myDiv</span><span class="pun">.</span><span class="pln">className </span><span class="pun">=</span><span class="pln"> </span><span class="str">''</span><span class="pun">;</span><span class="pln">
+	</span><span class="pun">}</span><span class="kwd">else</span><span class="pun">{</span><span class="pln">
+		myDiv</span><span class="pun">.</span><span class="pln">className </span><span class="pun">=</span><span class="pln"> </span><span class="str">'myFlipedDiv'</span><span class="pun">;</span><span class="pln">
+	</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<pre class="snippet-code-css lang-css prettyprint prettyprinted"><code><span class="pun">#</span><span class="pln">myDiv</span><span class="pun">{</span><span class="pln">
+  </span><span class="kwd">display</span><span class="pun">:</span><span class="pln">inline-block</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">width</span><span class="pun">:</span><span class="lit">200px</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">height</span><span class="pun">:</span><span class="lit">20px</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">padding</span><span class="pun">:</span><span class="lit">90px</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">background-color</span><span class="pun">:</span><span class="pln">red</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">text-align</span><span class="pun">:</span><span class="pln">center</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">-webkit-transition</span><span class="pun">:</span><span class="pln">transform </span><span class="lit">.4s</span><span class="pln"> ease-out </span><span class="lit">0ms</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">-moz-transition</span><span class="pun">:</span><span class="pln">transform </span><span class="lit">.4s</span><span class="pln"> ease-out </span><span class="lit">0ms</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">-o-transition</span><span class="pun">:</span><span class="pln">transform </span><span class="lit">.4s</span><span class="pln"> ease-out </span><span class="lit">0ms</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">transition</span><span class="pun">:</span><span class="pln">transform </span><span class="lit">.4s</span><span class="pln"> ease-out </span><span class="lit">0ms</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">transition-property</span><span class="pun">:</span><span class="pln">transform</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">transition-duration</span><span class="pun">:</span><span class="lit">.4s</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">transition-timing-function</span><span class="pun">:</span><span class="pln">ease-out</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">transition-delay</span><span class="pun">:</span><span class="lit">0ms</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">myFlipedDiv</span><span class="pun">{</span><span class="pln">
+  </span><span class="kwd">-moz-transform</span><span class="pun">:</span><span class="pln">scaleX</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> scaleY</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+  </span><span class="kwd">-o-transform</span><span class="pun">:</span><span class="pln">scaleX</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> scaleY</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+  </span><span class="kwd">-webkit-transform</span><span class="pun">:</span><span class="pln">scaleX</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> scaleY</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+  </span><span class="kwd">transform</span><span class="pun">:</span><span class="pln">scaleX</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> scaleY</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<pre class="snippet-code-html lang-html prettyprint prettyprinted"><code><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"myDiv"</span><span class="tag">&gt;</span><span class="pln">Some content here</span><span class="tag">&lt;/div&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">onclick</span><span class="pun">=</span><span class="atv">"</span><span class="pln">flip</span><span class="pun">()</span><span class="atv">"</span><span class="tag">&gt;</span><span class="pln">Click to flip</span><span class="tag">&lt;/button&gt;</span></code></pre>
+<div class="snippet-result"><div class="snippet-ctas"><button type="button"><span class="icon-play-white _hover"></span> Run code snippet</button><input class="copySnippet btn-secondary" type="button" value="Copy snippet to answer" style="display: none;"><button type="button" class="hideResults btn-clear" style="display: none;">Hide results</button><div class="popout-code"><a class="snippet-expand-link">Expand snippet</a></div></div><div class="snippet-result-code" style="display: none;"><iframe name="ab7367d5-7eff-1217-eab8-a391661a1097" sandbox="allow-forms allow-modals allow-scripts" class="snippet-box-edit" frameborder="0" src="./css3 - How to flip background image using CSS_ - Stack Overflow_files/saved_resource.html"></iframe></div></div></div>
+</div>
+<p></p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/32674467" title="short permalink to this answer" class="short-link" id="link-post-32674467">share</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2015-09-20 00:16:36Z" class="relativetime">Sep 20 '15 at 0:16</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/4254084/fi-ras"><div class="gravatar-wrapper-32"><img src="./css3 - How to flip background image using CSS_ - Stack Overflow_files/picture(1)" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/4254084/fi-ras">Fi Ras</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">306</span><span title="1 silver badge"><span class="badge2"></span><span class="badgecount">1</span></span><span title="8 bronze badges"><span class="badge3"></span><span class="badgecount">8</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-32674467" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-61117788" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">The "flip both vertical and horizontal at the same time" has the same effect as turning the image 180 degrees, works fine and is what I was looking for,</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/3764401/stonecrusher" title="80 reputation" class="comment-user">Stonecrusher</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css#comment61117788_32674467"><span title="2016-04-21 12:53:20Z" class="relativetime-clean">Apr 21 '16 at 12:53</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-32674467" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+				    <div class="question-status">
+        <h2>                    <b>protected</b> by <a href="http://stackoverflow.com/users/2224265/tushar-gupta">Tushar Gupta</a> <span dir="ltr"><span title="2014-12-17 10:10:00Z" class="relativetime">Dec 17 '14 at 10:10</span></span>
+</h2>
+        <p>
+Thank you for your interest in this question. 
+Because it has attracted low-quality or spam answers that had to be removed, posting an answer now requires 10 <a href="http://stackoverflow.com/help/whats-reputation">reputation</a> on this site (the <a href="http://stackoverflow.com/help/privileges/new-user">association bonus does not count</a>).
+<br><br>
+Would you like to answer one of these <a href="http://stackoverflow.com/unanswered?fromProtectedNotice=true">unanswered questions</a> instead?
+</p>
+    </div>
+
+
+
+
+
+						<h2 class="bottom-notice" data-loc="1">
+Not the answer you're looking for?							Browse other questions tagged <a href="http://stackoverflow.com/questions/tagged/css" class="post-tag" title="show questions tagged &#39;css&#39;" rel="tag">css</a> <a href="http://stackoverflow.com/questions/tagged/css3" class="post-tag" title="show questions tagged &#39;css3&#39;" rel="tag">css3</a> <a href="http://stackoverflow.com/questions/tagged/mobile-webkit" class="post-tag" title="show questions tagged &#39;mobile-webkit&#39;" rel="tag">mobile-webkit</a>  or <a href="http://stackoverflow.com/questions/ask">ask your own question</a>.						</h2>
+			</div>
+		</div>
+				<div id="sidebar" class="show-votes" role="complementary" aria-label="sidebar">
+						    <div class="module question-stats">
+			        <table id="qinfo">
+			            <tbody><tr>
+			                <td>
+			                    <p class="label-key">asked</p>
+			                </td>
+			                <td style="padding-left: 10px">
+			                    <p class="label-key" title="2011-04-24 06:13:22Z"><b>5 years, 11 months ago</b></p>
+			                </td>
+			            </tr>
+			            <tr>
+			                <td>
+			                    <p class="label-key">viewed</p>
+			                </td>
+
+			                <td style="padding-left: 10px">
+			                    <p class="label-key">
+			                        <b>177895 times</b>
+			                    </p>
+			                </td>
+			            </tr>
+			                <tr>
+			                    <td>
+			                        <p class="label-key">active</p>
+			                    </td>
+			                    <td style="padding-left: 10px">
+			                        <p class="label-key"><b><a href="http://stackoverflow.com/questions/5768998/how-to-flip-background-image-using-css?lastactivity" class="lastactivity-link" title="2016-10-24 08:03:02Z">5 months ago</a></b></p>
+			                    </td>
+			                </tr>
+			        </tbody></table>
+			    </div>
+						
+			<script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8277,"adzerk1739753213",[5,17,2221,1129,43]).setZone(45); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk1739753213"><div id="careersadsdoublehigh" style="display:none;"></div><img height="0px" width="0px" border="0" style="position: absolute; display: none !important;" src="http://engine.adzerk.net/i.gif?e=eyJhdiI6NDE0LCJhdCI6NSwiYnQiOjAsImNtIjo5MjEsImNoIjoxMTc4LCJjayI6e30sImNyIjoyNjg4LCJkaSI6IjQ4YTUxM2IyZDVmYzQ0YjE5NmU5NWJiZmNkMGFiNGZjIiwiZG0iOjEsImZjIjoyNDg1LCJmbCI6MjY2MywiaXAiOiIxNTQuNzAuMzkuMTkiLCJrdyI6ImNzcyxjc3MzLG1vYmlsZS13ZWJraXQseC1wZXJzb25hLWZyb250ZW5kIiwibnciOjIyLCJwYyI6MCwiZWMiOjAsInByIjo2MTczNywicnQiOjEsInJmIjoiaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8iLCJzYiI6ImktMDBjMzRkOWIzYzkxZGE5MTciLCJzcCI6MjI5ODUsInN0Ijo4Mjc3LCJ1ayI6InVlMS1jYTEwOTA2NWUzY2U0Nzg0OGVmYWEwMTA1MTg1NzFmOCIsInpuIjo0NSwidHMiOjE0OTI1MzMzNDY2MjUsImJmIjp0cnVlLCJwbiI6ImFkemVyazE3Mzk3NTMyMTMiLCJmcSI6MH0&amp;s=CP-UQqmLe5vNLodQQsQIKv6HxV4"></div>
+            <div id="hireme" class="clc-jobs-multi orange tagged"><a class="top " href="https://stackoverflow.com/jobs?allowsremote=true" target="_blank" data-clc-click="https://clc.stackoverflow.com/click?an=4xLzmv69ou2Kh6oLt6s3ExPLsr4HTOcEa5RE9jiaZTN-9LsdcDyQQYqhZwMDQ4M9IyMDizRTn8HhDo5FL3i5pBhSDqzWuWS5wt_VXprp_Ar2v3c4Lt3hZwCJP_z53pI_LAIofltt1WaOXXv4gMKxF9PPv7C0jA4ACv9bzj7nDsfE2_yMUgzmb6L7vlr-S4qzZ1giuPNT9dLf_jP9AQ&amp;cr=10439&amp;ct=1&amp;url=https%3A%2F%2Fstackoverflow.com%2Fjobs%3Fallowsremote%3Dtrue&amp;sig=b_Hc6Y_oY79DWg"><span>Work from anywhere</span></a><div class="middle"><ul class="jobs"><li class="&quot;clc-dismissable&quot;"><div class="job-wrap"><a class="job" title="Experienced Frontend Engineer at Citrusbyte. Click to learn more." href="https://stackoverflow.com/jobs/116247/experienced-frontend-engineer-citrusbyte?sec=False" target="_blank" data-clc-click="https://clc.stackoverflow.com/click?an=4xLzmv69ou2Kh6oLt6s3ExPLsr4HTOcEa5RE9jiaZTN-9LsdcDyQQYqhZwMDQ4M9IyMDizRTn8HhDo5FL3i5pBhSDqzWuWS5wt_VXprp_Ar2v3c4Lt3hZwCJP_z53pI_LAIofltt1WaOXXv4gMKxF9PPv7C0jA4ACv9bzj7nDsfE2_yMUgzmb6L7vlr-S4qzZ1giuPNT9dLf_jP9AQ&amp;cr=226338&amp;ct=0&amp;url=https%3A%2F%2Fstackoverflow.com%2Fjobs%2F116247%2Fexperienced-frontend-engineer-citrusbyte%3Fsec%3DFalse&amp;sig=VsYJu-npIpTnFg"><div class="title">Experienced Frontend Engineer</div><div><span class="company">Citrusbyte</span><span class="location">No office location</span></div><div class="opts"><span class="opt remote">Remote</span><span class="opt relocate">Relocation</span></div><span class="post-tag">javascript</span><span class="post-tag">reactjs</span></a></div><a class="clc-dismiss" data-clc-click="https://clc.stackoverflow.com/click?an=4xLzmv69ou2Kh6oLt6s3ExPLsr4HTOcEa5RE9jiaZTN-9LsdcDyQQYqhZwMDQ4M9IyMDizRTn8HhDo5FL3i5pBhSDqzWuWS5wt_VXprp_Ar2v3c4Lt3hZwCJP_z53pI_LAIofltt1WaOXXv4gMKxF9PPv7C0jA4ACv9bzj7nDsfE2_yMUgzmb6L7vlr-S4qzZ1giuPNT9dLf_jP9AQ&amp;cr=226338&amp;ct=-1&amp;sig=F--VwCdt46JT-A" data-clc-meta-target="-1"><span class="clc-tooltip above-left">dismiss this job</span></a></li><li class="&quot;clc-dismissable&quot;"><div class="job-wrap"><a class="job" title="Wordpress Developer Remote (US only) at Mediavine. Click to learn more." href="https://stackoverflow.com/jobs/140456/wordpress-developer-remote-us-only-mediavine?sec=False" target="_blank" data-clc-click="https://clc.stackoverflow.com/click?an=4xLzmv69ou2Kh6oLt6s3ExPLsr4HTOcEa5RE9jiaZTN-9LsdcDyQQYqhZwMDQ4M9IyMDizRTn8HhDo5FL3i5pBhSDqzWuWS5wt_VXprp_Ar2v3c4Lt3hZwCJP_z53pI_LAIofltt1WaOXXv4gMKxF9PPv7C0jA4ACv9bzj7nDsfE2_yMUgzmb6L7vlr-S4qzZ1giuPNT9dLf_jP9AQ&amp;cr=257618&amp;ct=0&amp;url=https%3A%2F%2Fstackoverflow.com%2Fjobs%2F140456%2Fwordpress-developer-remote-us-only-mediavine%3Fsec%3DFalse&amp;sig=0J7z4JXBerRXkg"><div class="title">Wordpress Developer Remote (US only)</div><div><span class="company">Mediavine</span><span class="location">No office location</span></div><div class="opts"><span class="opt salary">$40k - $60k</span><span class="opt remote">Remote</span></div><span class="post-tag">wordpress</span><span class="post-tag">javascript</span></a></div><a class="clc-dismiss" data-clc-click="https://clc.stackoverflow.com/click?an=4xLzmv69ou2Kh6oLt6s3ExPLsr4HTOcEa5RE9jiaZTN-9LsdcDyQQYqhZwMDQ4M9IyMDizRTn8HhDo5FL3i5pBhSDqzWuWS5wt_VXprp_Ar2v3c4Lt3hZwCJP_z53pI_LAIofltt1WaOXXv4gMKxF9PPv7C0jA4ACv9bzj7nDsfE2_yMUgzmb6L7vlr-S4qzZ1giuPNT9dLf_jP9AQ&amp;cr=257618&amp;ct=-1&amp;sig=HNQFY_caHFwXhA" data-clc-meta-target="-1"><span class="clc-tooltip above-left">dismiss this job</span></a></li><li class="&quot;clc-dismissable&quot;"><div class="job-wrap"><a class="job" title="Front End: CSS Styling and Drupal Themeing Engineer at Compucorp. Click to learn more." href="https://stackoverflow.com/jobs/81540/front-end-css-styling-and-drupal-themeing-compucorp?sec=False" target="_blank" data-clc-click="https://clc.stackoverflow.com/click?an=4xLzmv69ou2Kh6oLt6s3ExPLsr4HTOcEa5RE9jiaZTN-9LsdcDyQQYqhZwMDQ4M9IyMDizRTn8HhDo5FL3i5pBhSDqzWuWS5wt_VXprp_Ar2v3c4Lt3hZwCJP_z53pI_LAIofltt1WaOXXv4gMKxF9PPv7C0jA4ACv9bzj7nDsfE2_yMUgzmb6L7vlr-S4qzZ1giuPNT9dLf_jP9AQ&amp;cr=237114&amp;ct=0&amp;url=https%3A%2F%2Fstackoverflow.com%2Fjobs%2F81540%2Ffront-end-css-styling-and-drupal-themeing-compucorp%3Fsec%3DFalse&amp;sig=DuM5K2_nm_w-WA"><div class="title">Front End: CSS Styling and Drupal Themeing Engineer</div><div><span class="company">Compucorp</span><span class="location">London, UK</span></div><div class="opts"><span class="opt salary">£15k - £25k</span><span class="opt remote">Remote</span></div><span class="post-tag">drupal</span><span class="post-tag">drupal-theming</span></a></div><a class="clc-dismiss" data-clc-click="https://clc.stackoverflow.com/click?an=4xLzmv69ou2Kh6oLt6s3ExPLsr4HTOcEa5RE9jiaZTN-9LsdcDyQQYqhZwMDQ4M9IyMDizRTn8HhDo5FL3i5pBhSDqzWuWS5wt_VXprp_Ar2v3c4Lt3hZwCJP_z53pI_LAIofltt1WaOXXv4gMKxF9PPv7C0jA4ACv9bzj7nDsfE2_yMUgzmb6L7vlr-S4qzZ1giuPNT9dLf_jP9AQ&amp;cr=237114&amp;ct=-1&amp;sig=5_MxdqzPAjFeyA" data-clc-meta-target="-1"><span class="clc-tooltip above-left">dismiss this job</span></a></li><li class="&quot;clc-dismissable&quot;"><div class="job-wrap"><a class="job" title="Senior Software Engineer at Appen. Click to learn more." href="https://stackoverflow.com/jobs/140349/senior-software-engineer-appen?sec=False" target="_blank" data-clc-click="https://clc.stackoverflow.com/click?an=4xLzmv69ou2Kh6oLt6s3ExPLsr4HTOcEa5RE9jiaZTN-9LsdcDyQQYqhZwMDQ4M9IyMDizRTn8HhDo5FL3i5pBhSDqzWuWS5wt_VXprp_Ar2v3c4Lt3hZwCJP_z53pI_LAIofltt1WaOXXv4gMKxF9PPv7C0jA4ACv9bzj7nDsfE2_yMUgzmb6L7vlr-S4qzZ1giuPNT9dLf_jP9AQ&amp;cr=257425&amp;ct=0&amp;url=https%3A%2F%2Fstackoverflow.com%2Fjobs%2F140349%2Fsenior-software-engineer-appen%3Fsec%3DFalse&amp;sig=GQPYvdl8_fdRJg"><div class="title">Senior Software Engineer</div><div><span class="company">Appen</span><span class="location">San Francisco, CA</span></div><div class="opts"><span class="opt salary">$80k - $120k</span><span class="opt remote">Remote</span></div><span class="post-tag">ruby-on-rails</span><span class="post-tag">sql</span></a></div><a class="clc-dismiss" data-clc-click="https://clc.stackoverflow.com/click?an=4xLzmv69ou2Kh6oLt6s3ExPLsr4HTOcEa5RE9jiaZTN-9LsdcDyQQYqhZwMDQ4M9IyMDizRTn8HhDo5FL3i5pBhSDqzWuWS5wt_VXprp_Ar2v3c4Lt3hZwCJP_z53pI_LAIofltt1WaOXXv4gMKxF9PPv7C0jA4ACv9bzj7nDsfE2_yMUgzmb6L7vlr-S4qzZ1giuPNT9dLf_jP9AQ&amp;cr=257425&amp;ct=-1&amp;sig=fnS7Qbs2-xTnXw" data-clc-meta-target="-1"><span class="clc-tooltip above-left">dismiss this job</span></a></li></ul></div><img src="./css3 - How to flip background image using CSS_ - Stack Overflow_files/impression.gif" class="impression" style="display: none;"></div>
+        <script>
+window.clc_request = 'AozmEPZ4htQIAAAAACYHWAACAAAAAgAAAAArAAAAfGNzc3xjc3MzfG1vYmlsZS13ZWJraXR8eC1wZXJzb25hLWZyb250ZW5kfADfNUDTw_Zz03N8';
+;(function(n){var t,u,r,i;try{if(typeof[].indexOf!="function")return;if(window.attachEvent&&!window.addEventListener)return;if(n.allowed[0]!=="*"&&n.allowed.indexOf(location.hostname)===-1)return;if(t=window,t.clc=t.clc||{},u=t.clc_request||t.clcfl_request,t.clc.init=t.clc.init||[],t.clc.init.push(function(n){return n.load()}),t.clc.options){for(r in t.clc.options)n[r]=t.clc.options[r];t.clc.options=n}else t.clc.options=n;i=document.createElement("script");i.async=!0;i.src=n.lib;document.body.appendChild(i)}catch(f){console.error("[clc] Error in loader:",f)}}).call(null, {"lib":"https://cdn.sstatic.net/clc/clc.min.js?v=1a6a0d1a9fff","u":"https://clc.stackoverflow.com/markup.js","azw":true,"kt":2000,"tto":true,"d":{"sb":["hireme","clc-sb"],"tlb":["careers1","clc-tlb"],"mlb":["careers3","clc-mlb"]},"h":"clc.stackoverflow.com","autoload":true,"allowed":["stackoverflow.com","serverfault.com","blog.codinghorror.com","talent.stackoverflow.com"]});        </script>
+			
+
+            <div class="module sidebar-linked">
+	<h4 id="h-linked">Linked</h4>
+	<div class="linked" data-tracker="lq=1">
+
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/20346724?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">5</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/20346724/is-there-anyway-to-inversly-repeat-the-background-image?noredirect=1&amp;lq=1" class="question-hyperlink">Is there anyway to inversly repeat the background-image?</a>
+</div>
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/16041690?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">4</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/16041690/how-can-i-flip-an-image-horizontally-in-net-web-app?noredirect=1&amp;lq=1" class="question-hyperlink">How can I flip an image horizontally in .net web app</a>
+</div>
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/13287090?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">4</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/13287090/background-flipped-tiling-using-javascript?noredirect=1&amp;lq=1" class="question-hyperlink">Background flipped tiling using Javascript</a>
+</div>
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/23984459?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">1</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/23984459/background-image-reflected-and-repeated-with-css?noredirect=1&amp;lq=1" class="question-hyperlink">Background image reflected and repeated with CSS</a>
+</div>
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/38325530?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">1</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/38325530/is-it-possible-to-repeat-the-background-image-in-html-mirrored-horizontally?noredirect=1&amp;lq=1" class="question-hyperlink">Is it possible to repeat the background image in html mirrored horizontally</a>
+</div>			</div>
+</div>
+
+				<div class="module sidebar-related">
+					<h4 id="h-related">Related</h4>
+                    <div class="related js-gps-related-questions" data-tracker="rq=1">
+                        <div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/114543?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted extra-large">2943</div></a><a href="http://stackoverflow.com/questions/114543/how-to-horizontally-center-a-div-in-another-div?rq=1" class="question-hyperlink">How to horizontally center a &lt;div&gt; in another &lt;div&gt;?</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/609273?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes large">525</div></a><a href="http://stackoverflow.com/questions/609273/convert-an-image-to-grayscale-in-html-css?rq=1" class="question-hyperlink">Convert an image to grayscale in HTML/CSS</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/806000?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted extra-large">1741</div></a><a href="http://stackoverflow.com/questions/806000/how-do-i-give-text-or-an-image-a-transparent-background-using-css?rq=1" class="question-hyperlink">How do I give text or an image a transparent background using CSS?</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/826782?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes extra-large">3586</div></a><a href="http://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting-using-css?rq=1" class="question-hyperlink">How to disable text selection highlighting using CSS?</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/1150163?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted large">610</div></a><a href="http://stackoverflow.com/questions/1150163/stretch-and-scale-a-css-image-in-the-background-with-css-only?rq=1" class="question-hyperlink">Stretch and scale a CSS image in the background - with CSS only</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/1341358?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted large">344</div></a><a href="http://stackoverflow.com/questions/1341358/set-size-on-background-image-with-css?rq=1" class="question-hyperlink">Set size on background image with CSS?</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/2504071?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted large">913</div></a><a href="http://stackoverflow.com/questions/2504071/how-do-i-combine-a-background-image-and-css3-gradient-on-the-same-element?rq=1" class="question-hyperlink">How do I combine a background-image and CSS3 gradient on the same element?</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/3508605?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted extra-large">1174</div></a><a href="http://stackoverflow.com/questions/3508605/how-can-i-transition-height-0-to-height-auto-using-css?rq=1" class="question-hyperlink">How can I transition height: 0; to height: auto; using CSS?</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/7073484?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted extra-large">1410</div></a><a href="http://stackoverflow.com/questions/7073484/how-do-css-triangles-work?rq=1" class="question-hyperlink">How do CSS triangles work?</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/20039765?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted large">263</div></a><a href="http://stackoverflow.com/questions/20039765/how-to-apply-a-css-3-blur-filter-to-a-background-image?rq=1" class="question-hyperlink">How to apply a CSS 3 blur filter to a background image</a></div>
+                    </div>
+				</div>
+            
+<div id="hot-network-questions" class="module tex2jax_ignore">
+    <h4>
+        <a href="https://stackexchange.com/questions?tab=hot" class="js-gps-track" data-gps-track="posts_hot_network.click({ item_type:1, location:11 })">
+            Hot Network Questions
+        </a>
+    </h4>
+    <ul>
+            <li>
+                <div class="favicon favicon-security" title="Information Security Stack Exchange"></div><a href="https://security.stackexchange.com/questions/157520/which-hash-length-is-more-secure" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:162 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Which hash-length is more secure?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-scifi" title="Science Fiction &amp; Fantasy Stack Exchange"></div><a href="https://scifi.stackexchange.com/questions/157481/where-exactly-is-azkaban" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:186 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Where exactly is Azkaban?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-rpg" title="Role-playing Games Stack Exchange"></div><a href="https://rpg.stackexchange.com/questions/98242/a-player-wants-to-always-recruit-npcs-into-the-party-how-do-i-handle-this" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:122 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    A player wants to always recruit NPCs into the party. How do I handle this?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-movies" title="Movies &amp; TV Stack Exchange"></div><a href="https://movies.stackexchange.com/questions/71854/do-star-trek-characters-wearing-red-shirts-have-the-highest-death-rate-on-the-or" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:367 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Do Star Trek characters wearing red shirts have the highest death rate on the original show?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="https://academia.stackexchange.com/questions/88062/what-is-the-best-last-slide-in-a-thesis-presentation" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What is the best "last slide" in a thesis presentation?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-bricks" title="LEGO® Answers"></div><a href="https://bricks.stackexchange.com/questions/8815/how-do-i-center-a-2x2-plate-on-a-3x3-plate" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:336 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How do I center a 2x2 plate on a 3x3 plate?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-rpg" title="Role-playing Games Stack Exchange"></div><a href="https://rpg.stackexchange.com/questions/98320/how-would-using-thunderwave-to-stop-falling-damage-work" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:122 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How would using Thunderwave to stop falling damage work?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-math" title="Mathematics Stack Exchange"></div><a href="https://math.stackexchange.com/questions/2240050/requirements-on-fields-for-determinants-to-bust-dependence" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:69 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Requirements on fields for determinants to bust dependence.
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-rpg" title="Role-playing Games Stack Exchange"></div><a href="https://rpg.stackexchange.com/questions/98311/player-may-be-manipulating-die-rolls-but-im-uncertain-how-do-i-approach-the-s" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:122 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Player may be manipulating die rolls, but I'm uncertain. How do I approach the situation?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-mathematica" title="Mathematica Stack Exchange"></div><a href="https://mathematica.stackexchange.com/questions/143806/using-a-list-of-rules-to-update-its-own-values" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:387 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Using a list of rules to update its own values
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-tex" title="TeX - LaTeX Stack Exchange"></div><a href="https://tex.stackexchange.com/questions/365261/how-to-neatly-space-the-equals-sign-when-using-probabilities" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:85 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to neatly space the equals sign when using probabilities?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-physics" title="Physics Stack Exchange"></div><a href="https://physics.stackexchange.com/questions/327186/why-dont-molecules-of-a-gas-settle" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:151 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why don't molecules of a gas settle?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-skeptics" title="Skeptics Stack Exchange"></div><a href="https://skeptics.stackexchange.com/questions/37941/can-drinking-harmonized-water-prevent-sunburn" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:212 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Can drinking "harmonized" water prevent sunburn
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-english" title="English Language &amp; Usage Stack Exchange"></div><a href="https://english.stackexchange.com/questions/384812/why-is-nebraska-listed-after-other-states" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:97 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why is Nebraska listed after other states?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="https://worldbuilding.stackexchange.com/questions/78437/would-a-base-on-the-moon-military-or-otherwise-actually-prove-useful" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Would a base on the moon (military or otherwise) actually prove useful?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-islam" title="Islam Stack Exchange"></div><a href="https://islam.stackexchange.com/questions/39129/is-a-marriage-which-is-illegal-in-the-host-country-still-islamically-valid" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:455 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is a marriage which is illegal in the host country still Islamically valid?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="https://worldbuilding.stackexchange.com/questions/78463/a-weaponpreferably-hard-scifi-that-will-limit-velocity-of-space-ships-in-a-wid" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    A weapon(preferably hard scifi) that will limit velocity of space ships in a wide region temporarily
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-christianity" title="Christianity Stack Exchange"></div><a href="https://christianity.stackexchange.com/questions/56377/can-a-catholic-priest-adopt-a-child" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:304 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Can a Catholic priest adopt a child?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-aviation" title="Aviation Stack Exchange"></div><a href="https://aviation.stackexchange.com/questions/37182/does-it-make-sense-to-do-an-emergency-landing-without-nose-gear-in-order-to-redu" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:528 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Does it make sense to do an emergency landing without nose gear in order to reduce stopping distance?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-cooking" title="Seasoned Advice"></div><a href="https://cooking.stackexchange.com/questions/81024/how-to-clean-a-mill" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:49 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to clean a mill
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-workplace" title="The Workplace Stack Exchange"></div><a href="https://workplace.stackexchange.com/questions/89357/how-to-handle-coworker-pretending-to-be-my-boss" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:423 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to handle coworker pretending to be my boss?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-physics" title="Physics Stack Exchange"></div><a href="https://physics.stackexchange.com/questions/327323/understanding-time-dilation-at-the-event-horizon" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:151 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Understanding Time Dilation at the Event Horizon
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="https://academia.stackexchange.com/questions/88189/how-to-react-when-a-team-of-colleagues-obviously-made-up-some-results" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to react when a team of colleagues obviously made up some results?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-arduino" title="Arduino Stack Exchange"></div><a href="https://arduino.stackexchange.com/questions/37233/how-to-use-analogwrite-on-multiple-pins-at-the-same-time" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:540 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to use analogWrite() on multiple pins at the same time?
+                </a>
+
+            </li>
+    </ul>
+
+        
+</div>
+		</div>
+	
+<div id="feed-link">
+    <div id="feed-link-text">
+        <a href="http://stackoverflow.com/feeds/question/5768998" title="feed of this question and its answers">
+            <span class="feed-icon"></span>question feed
+        </a>
+    </div>
+</div>	<script>
+StackExchange.ready(function(){$.get('/posts/5768998/ivc/2dbd');});
+</script>
+<noscript>
+    &lt;div&gt;&lt;img src="/posts/5768998/ivc/2dbd" class="dno" alt="" width="0" height="0"&gt;&lt;/div&gt;
+</noscript><div style="display:none" id="prettify-lang">default</div></div>
+
+
+        </div>
+    </div><script async="" src="./css3 - How to flip background image using CSS_ - Stack Overflow_files/clc.min.js.download"></script>
+    <div id="footer" class="categories" role="contentinfo">
+        <div class="footerwrap">            
+            <div id="footer-menu">
+                <div class="top-footer-links">
+                    <a href="http://stackoverflow.com/company/about">about us</a>
+                        <a href="http://stackoverflow.com/tour">tour</a>
+                    <a href="http://stackoverflow.com/help">help</a>
+                    <a href="https://stackoverflow.blog/?blb=1">blog</a>
+                        <a href="http://chat.stackoverflow.com/">chat</a>
+                    <a href="https://data.stackexchange.com/">data</a>
+                    <a href="https://stackexchange.com/legal">legal</a>
+                    <a href="https://stackexchange.com/legal/privacy-policy">privacy policy</a>
+                    <a href="http://stackoverflow.com/company/work-here">work here</a>
+                    <a href="https://www.stackoverflowbusiness.com/advertise">advertising info</a>
+                        <a href="http://stackoverflow.com/jobs/directory/developer-jobs">developer jobs directory</a>
+
+                    <a onclick="StackExchange.switchMobile(&quot;on&quot;)">mobile</a>
+                    <b><a href="http://stackoverflow.com/contact">contact us</a></b>
+                        <b><a href="https://meta.stackoverflow.com/">feedback</a></b>
+                    
+                </div>
+                <div id="footer-sites">
+                    <table>
+    <tbody><tr>
+            <th colspan="3">
+                Technology
+            </th>
+            <th>
+                Life / Arts
+            </th>
+            <th>
+                Culture / Recreation
+            </th>
+            <th>
+                Science
+            </th>
+            <th>
+                Other
+            </th>
+    </tr>
+    <tr>
+            <td>
+                <ol>
+                        <li><a href="http://stackoverflow.com/" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                        <li><a href="http://serverfault.com/" title="system and network administrators">Server Fault</a></li>
+                        <li><a href="http://superuser.com/" title="computer enthusiasts and power users">Super User</a></li>
+                        <li><a href="http://webapps.stackexchange.com/" title="power users of web applications">Web Applications</a></li>
+                        <li><a href="http://askubuntu.com/" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                        <li><a href="http://webmasters.stackexchange.com/" title="pro webmasters">Webmasters</a></li>
+                        <li><a href="http://gamedev.stackexchange.com/" title="professional and independent game developers">Game Development</a></li>
+                        <li><a href="http://tex.stackexchange.com/" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                        <li><a href="http://softwareengineering.stackexchange.com/" title="professionals, academics, and students working within the systems development life cycle who care about creating, delivering, and maintaining software responsibly">Software Engineering</a></li>
+                        <li><a href="http://unix.stackexchange.com/" title="users of Linux, FreeBSD and other Un*x-like operating systems">Unix &amp; Linux</a></li>
+                        <li><a href="http://apple.stackexchange.com/" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                        <li><a href="http://wordpress.stackexchange.com/" title="WordPress developers and administrators">WordPress Development</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://gis.stackexchange.com/" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                        <li><a href="http://electronics.stackexchange.com/" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                        <li><a href="http://android.stackexchange.com/" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                        <li><a href="http://security.stackexchange.com/" title="information security professionals">Information Security</a></li>
+                        <li><a href="http://dba.stackexchange.com/" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                        <li><a href="http://drupal.stackexchange.com/" title="Drupal developers and administrators">Drupal Answers</a></li>
+                        <li><a href="http://sharepoint.stackexchange.com/" title="SharePoint enthusiasts">SharePoint</a></li>
+                        <li><a href="http://ux.stackexchange.com/" title="user experience researchers and experts">User Experience</a></li>
+                        <li><a href="http://mathematica.stackexchange.com/" title="users of Wolfram Mathematica">Mathematica</a></li>
+                        <li><a href="http://salesforce.stackexchange.com/" title="Salesforce administrators, implementation experts, developers and anybody in-between">Salesforce</a></li>
+                        <li><a href="http://expressionengine.stackexchange.com/" title="administrators, end users, developers and designers for ExpressionEngine® CMS">ExpressionEngine® Answers</a></li>
+                        <li><a href="http://crypto.stackexchange.com/" title="software developers, mathematicians and others interested in cryptography">Cryptography</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://codereview.stackexchange.com/" title="peer programmer code reviews">Code Review</a></li>
+                        <li><a href="http://magento.stackexchange.com/" title="users of the Magento e-Commerce platform">Magento</a></li>
+                        <li><a href="http://dsp.stackexchange.com/" title="practitioners of the art and science of signal, image and video processing">Signal Processing</a></li>
+                        <li><a href="http://raspberrypi.stackexchange.com/" title="users and developers of hardware and software for Raspberry Pi">Raspberry Pi</a></li>
+                        <li><a href="http://codegolf.stackexchange.com/" title="programming puzzle enthusiasts and code golfers">Programming Puzzles &amp; Code Golf</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#technology" class="more">
+                                more (7)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://photo.stackexchange.com/" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                        <li><a href="http://scifi.stackexchange.com/" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                        <li><a href="http://graphicdesign.stackexchange.com/" title="Graphic Design professionals, students, and enthusiasts">Graphic Design</a></li>
+                        <li><a href="http://movies.stackexchange.com/" title="movie and tv enthusiasts">Movies &amp; TV</a></li>
+                        <li><a href="http://music.stackexchange.com/" title="musicians, students, and enthusiasts">Music: Practice &amp; Theory</a></li>
+                        <li><a href="http://cooking.stackexchange.com/" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                        <li><a href="http://diy.stackexchange.com/" title="contractors and serious DIYers">Home Improvement</a></li>
+                        <li><a href="http://money.stackexchange.com/" title="people who want to be financially literate">Personal Finance &amp; Money</a></li>
+                        <li><a href="http://academia.stackexchange.com/" title="academics and those enrolled in higher education">Academia</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#lifearts" class="more">
+                                more (8)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://english.stackexchange.com/" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                        <li><a href="http://skeptics.stackexchange.com/" title="scientific skepticism">Skeptics</a></li>
+                        <li><a href="http://judaism.stackexchange.com/" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                        <li><a href="http://travel.stackexchange.com/" title="road warriors and seasoned travelers">Travel</a></li>
+                        <li><a href="http://christianity.stackexchange.com/" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                        <li><a href="http://ell.stackexchange.com/" title="speakers of other languages learning English">English Language Learners</a></li>
+                        <li><a href="http://japanese.stackexchange.com/" title="students, teachers, and linguists wanting to discuss the finer points of the Japanese language">Japanese Language</a></li>
+                        <li><a href="http://gaming.stackexchange.com/" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                        <li><a href="http://bicycles.stackexchange.com/" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                        <li><a href="http://rpg.stackexchange.com/" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                        <li><a href="http://anime.stackexchange.com/" title="anime and manga fans">Anime &amp; Manga</a></li>
+                        <li><a href="http://mechanics.stackexchange.com/" title="mechanics and DIY enthusiast owners of cars, trucks, and motorcycles">Motor Vehicle Maintenance &amp; Repair</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#culturerecreation" class="more">
+                                more (17)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://mathoverflow.net/" title="professional mathematicians">MathOverflow</a></li>
+                        <li><a href="http://math.stackexchange.com/" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                        <li><a href="http://stats.stackexchange.com/" title="people interested in statistics, machine learning, data analysis, data mining, and data visualization">Cross Validated (stats)</a></li>
+                        <li><a href="http://cstheory.stackexchange.com/" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                        <li><a href="http://physics.stackexchange.com/" title="active researchers, academics and students of physics">Physics</a></li>
+                        <li><a href="http://chemistry.stackexchange.com/" title="scientists, academics, teachers and students">Chemistry</a></li>
+                        <li><a href="http://biology.stackexchange.com/" title="biology researchers, academics, and students">Biology</a></li>
+                        <li><a href="http://cs.stackexchange.com/" title="students, researchers and practitioners of computer science">Computer Science</a></li>
+                        <li><a href="http://philosophy.stackexchange.com/" title="those interested in the study of the fundamental nature of knowledge, reality, and existence">Philosophy</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#science" class="more">
+                                more (3)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://meta.stackexchange.com/" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Exchange</a></li>
+                        <li><a href="http://stackapps.com/" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                        <li><a href="http://area51.stackexchange.com/" title="proposing new sites in the Stack Exchange network">Area 51</a></li>
+                        <li><a href="https://www.stackoverflowbusiness.com/talent">Stack Overflow Talent</a></li>
+                    
+                </ol>
+            </td>
+    </tr>
+</tbody></table>
+                </div>
+            </div>
+            <div id="copyright">
+                site design / logo © 2017 Stack Exchange Inc; user contributions licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc by-sa 3.0</a> 
+                with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            <div id="svnrev">
+                rev 2017.4.18.25701
+            </div>
+                </div>
+    </div>
+    <noscript>
+        &lt;div id="noscript-warning"&gt;Stack Overflow works best with JavaScript enabled&lt;img src="https://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"&gt;&lt;/div&gt;
+    </noscript>
+
+<script>var p = "http", d = "static"; if (document.location.protocol == "https:") { p += "s"; d = "engine"; } var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = p + "://" + d + ".adzerk.net/ados.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
+<script>
+    var ados = ados || {};
+    ados.run = ados.run || [];
+    
+    
+        
+        ados.run.push(function () {
+                setTimeout(function () { $("#adzerk-user-match").remove(); }, window.AUMIframeDone ? 0 : 2000);
+                ados_setKeywords('css,css3,mobile-webkit,x-persona-frontend');; ados_load();
+        });   
+        
+</script>
+
+    <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+                ga('create', 'UA-5620270-1');
+                ga('create', 'UA-5620270-59', {name: 'pageData', sampleRate: 5 });
+                ga('set', 'dimension2', '|css|css3|mobile-webkit|');
+                ga('pageData.set', 'dimension2', '|css|css3|mobile-webkit|');
+                ga('send', 'pageview');
+                ga('pageData.send', 'pageview');
+        var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+        (function () {
+            var ssl='https:'==document.location.protocol,
+                s=document.getElementsByTagName('script')[0],
+                qc=document.createElement('script');
+                qc.async = true;
+                qc.src = (ssl ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+                s.parentNode.insertBefore(qc, s);
+                _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+                            var sc=document.createElement('script');
+                sc.async=true;
+                sc.src=(ssl?'https://sb':'http://b') + '.scorecardresearch.com/beacon.js';
+                s.parentNode.insertBefore(sc, s);
+                _comscore.push({ c1: "2", c2: "17440561" });
+        })();
+
+    </script>
+        
+    
+            <script type="text/javascript">
+                
+                (function(appendChild) {
+                    Node.prototype.appendChild = function() {
+                        var parent = this;
+                        var newNode = arguments[0];
+                        if (parent.nodeName === 'HEAD'
+                            && newNode
+                            && newNode.nodeName === 'SCRIPT'
+                            && newNode.src) {
+                            
+                            window.setTimeout(function() {
+                                var result = newNode.src.match(/^https:\/\/maps\.googleapis\.com\/maps\/api\/place\/js\/(\w+)Service\./i) || [];
+                                var service = result[1];
+                                if (service) {
+                                    if (service === 'Autocompletion') service =  2;
+                                    else if (service === 'Place') service = 1;
+                                    else service = 0;
+                                    StackExchange.using('gps', function() {
+                                        StackExchange.gps.track('google_maps_places_api.call', { service: service });
+                                    });
+                                }
+                            }, 0);
+                        }
+                        return appendChild.apply(this, arguments);
+                    };
+                })(Node.prototype.appendChild);
+            </script>
+    
+</body></html>

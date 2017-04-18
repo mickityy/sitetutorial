@@ -1,0 +1,2699 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://css-tricks.com/snippets/css/flip-an-image/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+
+  <meta name="viewport" content="width=device-width">
+
+  
+  <title>Flip an Image | CSS-Tricks</title>
+
+  <link rel="apple-touch-icon" href="https://cdn.css-tricks.com/apple-touch-icon.png">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="msapplication-TileImage" content="https://cdn.css-tricks.com/mstile-144x144.png">
+
+  <meta property="fb:pages" content="124436167285">
+
+  <link rel="search" type="application/opensearchdescription+xml" href="https://cdn.css-tricks.com/opensearch.xml" title="CSS-Tricks Search">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/CssTricks">
+
+  <link rel="stylesheet" href="./Flip an Image _ CSS-Tricks_files/fonts.css">
+  <!--[if !IE]><!-->
+  <link rel="stylesheet" href="./Flip an Image _ CSS-Tricks_files/style.css">
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" href="https://cdn.css-tricks.com/wp-content/themes/CSS-Tricks-16/css/oldie.css">
+  <![endif]-->
+  <!--[if IE 9]>
+  <link rel="stylesheet" href="https://cdn.css-tricks.com/wp-content/themes/CSS-Tricks-16/style.css?v=4.3>
+  <![endif]-->
+
+    
+  
+<!-- This site is optimized with the Yoast SEO plugin v4.5 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="You can flip images with CSS! Possible scenario: having only one graphic for an &quot;arrow&quot;, but flipping it around to point in different directions. img { -mo">
+<meta name="robots" content="noodp">
+<link rel="canonical" href="https://css-tricks.com/snippets/css/flip-an-image/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Flip an Image | CSS-Tricks">
+<meta property="og:description" content="You can flip images with CSS! Possible scenario: having only one graphic for an &quot;arrow&quot;, but flipping it around to point in different directions. img { -mo">
+<meta property="og:url" content="https://css-tricks.com/snippets/css/flip-an-image/">
+<meta property="og:site_name" content="CSS-Tricks">
+<meta property="article:publisher" content="https://www.facebook.com/CSSTricks">
+<meta property="article:section" content="Article">
+<meta property="og:image" content="//farm4.static.flickr.com/3010/4566263938_a56f24a24f.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="You can flip images with CSS! Possible scenario: having only one graphic for an &quot;arrow&quot;, but flipping it around to point in different directions. img { -mo">
+<meta name="twitter:title" content="Flip an Image | CSS-Tricks">
+<meta name="twitter:site" content="@Real_CSS_Tricks">
+<meta name="twitter:image" content="//farm4.static.flickr.com/3010/4566263938_a56f24a24f.jpg">
+<meta name="twitter:creator" content="@chriscoyier">
+<!-- / Yoast SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="CSS-Tricks » Flip an Image Comments Feed" href="https://css-tricks.com/snippets/css/flip-an-image/feed/">
+<link rel="https://api.w.org/" href="https://css-tricks.com/wp-json/">
+<link rel="shortlink" href="https://css-tricks.com/?p=6406">
+<link rel="alternate" type="application/json+oembed" href="https://css-tricks.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcss-tricks.com%2Fsnippets%2Fcss%2Fflip-an-image%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://css-tricks.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcss-tricks.com%2Fsnippets%2Fcss%2Fflip-an-image%2F&amp;format=xml">
+<!-- Better Art Direction Styles -->
+<style type="text/css" media="screen">
+#flip {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+</style>
+
+
+<link rel="dns-prefetch" href="https://v0.wordpress.com/">
+<link rel="dns-prefetch" href="https://jetpack.wordpress.com/">
+<link rel="dns-prefetch" href="https://s0.wp.com/">
+<link rel="dns-prefetch" href="https://s1.wp.com/">
+<link rel="dns-prefetch" href="https://s2.wp.com/">
+<link rel="dns-prefetch" href="https://public-api.wordpress.com/">
+<link rel="dns-prefetch" href="https://0.gravatar.com/">
+<link rel="dns-prefetch" href="https://1.gravatar.com/">
+<link rel="dns-prefetch" href="https://2.gravatar.com/">
+
+<script id="twitter-wjs" src="./Flip an Image _ CSS-Tricks_files/widgets.js.download"></script><script async="" src="./Flip an Image _ CSS-Tricks_files/analytics.js.download"></script><script async="" src="https://s3.buysellads.com/ac/bsa.js"></script><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed, .fluid-width-video-wrapper video {position:absolute;top:0;left:0;width:100%;height:100%;}</style><script type="text/javascript" charset="utf-8" async="" src="./Flip an Image _ CSS-Tricks_files/button.80ba267f37d7093ec36703643939b173.js.download"></script></head>
+
+<body class="page-template page-template-page-snippet page-template-page-snippet-php page page-id-6406 page-child parent-pageid-3222">
+
+  <script>
+    (function(){
+      var bsa = document.createElement('script');
+         bsa.async = true;
+         bsa.src = "//s3.buysellads.com/ac/bsa.js";
+      (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+    })();
+  </script>
+
+  <header class="site-header">
+
+  <div class="menu-toggle-area">
+    <button id="mobile-menu-toggle" class="button button-header mobile-menu-toggle">
+      <svg class="icon-menu" width="26px" height="26px">
+        <use xlink:href="#icon-menu"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="logo">
+    <a href="https://css-tricks.com/">
+      <svg class="icon-logo-star" width="26px" height="26px">
+        <use xlink:href="#icon-logo-star"></use>
+      </svg>
+    </a>
+  </div>
+
+  <div class="header-middle-area">
+
+    <a href="https://css-tricks.com/" class="logo-link">
+      CSS-Tricks
+    </a>
+
+  </div>
+
+  <button id="search-opener" class="button button-header search-opener-button">
+    <svg class="icon-search" width="26px" height="26px">
+      <use xlink:href="#icon-search"></use>
+    </svg>
+    <svg class="icon-close" width="26px" height="26px">
+      <use xlink:href="#icon-close"></use>
+    </svg>
+  </button>
+
+  <div class="search" role="search" id="search-area">
+
+    <form id="search-form" class="search-form" action="https://css-tricks.com/search-results/">
+
+      <label for="q" id="search-label" class="screen-reader">
+        Search
+      </label>
+
+      <input aria-labelledby="search-label" id="q" required="" type="search" name="q" class="search-field" value="">
+
+      <button type="submit" class="button button-header search-button">
+        <svg class="icon-search" width="26px" height="26px">
+          <use xlink:href="#icon-search"></use>
+        </svg>
+      </button>
+
+    </form>
+
+  </div>
+
+</header>
+
+  <div class="all-site-wrap">
+
+    <nav class="main-nav" id="main-nav">
+
+  <ul>
+    <li class="home">
+      <a href="https://css-tricks.com/">
+        <svg class="icon-nav-home" width="26px" height="26px">
+          <use xlink:href="#icon-nav-home"></use>
+        </svg>
+        <span>Home</span>
+      </a>
+    </li>
+    <li class="videos">
+      <a href="https://css-tricks.com/video-screencasts/">
+        <svg class="icon-nav-video" width="26px" height="26px">
+          <use xlink:href="#icon-nav-video"></use>
+        </svg>
+        <span>Videos</span>
+      </a>
+    </li>
+    <li class="almanac">
+      <a href="https://css-tricks.com/almanac/">
+        <svg class="icon-nav-almanac" width="26px" height="26px">
+          <use xlink:href="#icon-nav-almanac"></use>
+        </svg>
+        <span>Almanac</span>
+      </a>
+    </li>
+    <li class="gallery">
+      <a href="https://css-tricks.com/gallery/">
+        <svg class="icon-nav-gallery" width="26px" height="26px">
+          <use xlink:href="#icon-nav-gallery"></use>
+        </svg>
+        <span>Gallery</span>
+      </a>
+    </li>
+    <li class="snippets">
+      <a href="https://css-tricks.com/snippets/">
+        <svg class="icon-nav-snippets" width="26px" height="26px">
+          <use xlink:href="#icon-nav-snippets"></use>
+        </svg>
+        <span>Snippets</span>
+      </a>
+    </li>
+    <li class="forums">
+      <a href="https://css-tricks.com/forums/">
+        <svg class="icon-nav-forums" width="26px" height="26px">
+          <use xlink:href="#icon-nav-forums"></use>
+        </svg>
+        <span>Forums</span>
+      </a>
+    </li>
+    <li class="newsletter">
+      <a href="https://css-tricks.com/newsletters/">
+        <svg class="icon-nav-newsletter" width="26px" height="26px">
+          <use xlink:href="#icon-nav-newsletter"></use>
+        </svg>
+        <span>Newsletter</span>
+      </a>
+    </li>
+<!--     <li class="shop">
+      <a href="/shop/">
+        <svg class="icon-nav-shop" width="26px" height="26px">
+          <use xlink:href="#icon-nav-shop"></use>
+        </svg>
+        <span>Shop</span>
+      </a>
+    </li> -->
+    <li class="jobs">
+      <a href="https://css-tricks.com/jobs/">
+        <svg class="icon-nav-jobs" width="26px" height="26px">
+          <use xlink:href="#icon-nav-jobs"></use>
+        </svg>
+        <span>Jobs</span>
+      </a>
+    </li>
+    <li class="guides">
+      <a href="https://css-tricks.com/guides/">
+        <svg class="icon-nav-guide" width="26px" height="26px">
+          <use xlink:href="#icon-nav-guide"></use>
+        </svg>
+        <span>Guides</span>
+      </a>
+    </li>
+  </ul>
+
+</nav>
+<div class="page-wrap">
+
+  <header class="mega-header breadcrumbs-header breadcrumbs-last-updated" id="snippets-breadcrumbs">
+
+    <span><span xmlns:v="http://rdf.data-vocabulary.org/#"><span typeof="v:Breadcrumb"><a href="https://css-tricks.com/snippets/" rel="v:url" property="v:title">Code Snippets</a> » <span rel="v:child" typeof="v:Breadcrumb"><a href="https://css-tricks.com/snippets/css/" rel="v:url" property="v:title">CSS</a> » <strong class="breadcrumb_last">Flip an Image</strong></span></span></span></span>
+  </header>
+
+  <p class="author-byline">
+    <span class="author-byline-inside">
+      By
+      <a href="https://css-tricks.com/author/chriscoyier/">
+        <span class="p-author">
+          Chris Coyier        </span>
+      </a>
+      Last Updated On
+      <time datetime="2010-05-18" class="dt-published">
+        May 18, 2010      </time>
+    </span>
+  </p>
+
+  <article id="post-6406">
+
+    <h1 class="screen-reader">Flip an Image</h1>
+
+    <div class="article-content">
+
+      <p>You can flip images with CSS! Possible scenario: having only one graphic for an "arrow", but flipping it around to point in different directions.</p>
+<pre rel="CSS" class=" language-css"><code class=" language-css"><span class="token selector">img </span><span class="token punctuation">{</span>
+        <span class="token property">-moz-transform</span><span class="token punctuation">:</span> <span class="token function">scaleX</span><span class="token punctuation">(</span>-<span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token property">-o-transform</span><span class="token punctuation">:</span> <span class="token function">scaleX</span><span class="token punctuation">(</span>-<span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scaleX</span><span class="token punctuation">(</span>-<span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scaleX</span><span class="token punctuation">(</span>-<span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token property">filter</span><span class="token punctuation">:</span> FlipH<span class="token punctuation">;</span>
+        <span class="token property">-ms-filter</span><span class="token punctuation">:</span> <span class="token string">"FlipH"</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="article-header-id-0" class="has-header-link"><a class="article-headline-link" href="https://css-tricks.com/snippets/css/flip-an-image/#article-header-id-0">#</a>Demo</h3>
+<h4 id="article-header-id-1" class="has-header-link"><a class="article-headline-link" href="https://css-tricks.com/snippets/css/flip-an-image/#article-header-id-1">#</a>Unflipped</h4>
+<p><img id="regular" src="./Flip an Image _ CSS-Tricks_files/4566263938_a56f24a24f.jpg" alt=""></p>
+<h4 id="article-header-id-2" class="has-header-link"><a class="article-headline-link" href="https://css-tricks.com/snippets/css/flip-an-image/#article-header-id-2">#</a>Flipped</h4>
+<p><img id="flip" src="./Flip an Image _ CSS-Tricks_files/4566263938_a56f24a24f.jpg" alt=""></p>
+
+    </div>
+
+  </article>
+
+  <div class="end-of-article-ads">
+      <div class="bsap-doubles side-by-side">
+      <div id="bsap_1250418" class="bsarocks bsap_3469a2a501a9e18091036aa0c89f9dcb"></div>
+    </div>
+  </div>
+
+<div class="comments-col">
+      <div class="module-comments">
+      <section id="comments">
+
+
+
+  <h2 class="comments-title">
+    Comments
+  </h2>
+
+  <ol class="commentlist group">
+    
+    <li class="comment even thread-even depth-1" id="li-comment-76251">
+
+      <div class="grid group comment-wrap" id="comment-76251">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/9bc62071957c23fa46dca30e6601b904?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Pål Strøm</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-76251"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-05-18T07:06:26+00:00">May 18, 2010</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Can this be applied to background-images? If so, it’d be perfect for stuff like buttons and shadowed boxes.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=76251#respond" onclick="return addComment.moveForm( &quot;comment-76251&quot;, &quot;76251&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Pål Strøm">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  <ul class="children">
+
+    <li class="comment odd alt depth-2" id="li-comment-312287">
+
+      <div class="grid group comment-wrap" id="comment-312287">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/e9bd89d83acd8ad85fa73e20eb37f0cc?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Daan</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-312287"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-03-21T14:38:12+00:00">March 21, 2013</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>but you can apply it on a div with a bg image :)</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even depth-2" id="li-comment-519929">
+
+      <div class="grid group comment-wrap" id="comment-519929">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/36b364966ff041eaa4333f6bf26a7ced?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Pat</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-519929"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-08-20T06:06:31+00:00">August 20, 2013</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>which line is for what browser?</p>
+<p>-moz-transform: scaleX(-1);<br>
+-o-transform: scaleX(-1);<br>
+-webkit-transform: scaleX(-1);<br>
+transform: scaleX(-1);<br>
+filter: FlipH;<br>
+-ms-filter: “FlipH”;</p>
+<p>but seriously, MS should just scrap IE all together and make life a little easier.<br>
+Thanks!</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-76253">
+
+      <div class="grid group comment-wrap" id="comment-76253">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/df2070ca58c840d32f19c16414c12ebc?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Jan-Marten de Boer</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-76253"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-05-18T07:26:36+00:00">May 18, 2010</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>If you would apply this on a sprite image, would you need to reverse the coordinates as wel?</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=76253#respond" onclick="return addComment.moveForm( &quot;comment-76253&quot;, &quot;76253&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Jan-Marten de Boer">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-even depth-1" id="li-comment-76254">
+
+      <div class="grid group comment-wrap" id="comment-76254">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/ce0f8df84e1e4edb3d9999740472261a?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Jonathan Snook</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-76254"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-05-18T07:28:53+00:00">May 18, 2010</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>It cannot be applied to background images. Only elements.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=76254#respond" onclick="return addComment.moveForm( &quot;comment-76254&quot;, &quot;76254&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Jonathan Snook">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  <ul class="children">
+
+    <li class="comment odd alt depth-2" id="li-comment-88402">
+
+      <div class="grid group comment-wrap" id="comment-88402">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/dc01fca977ecd246f12cdb47aceb774a?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Kareem Ahmed</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-88402"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-02-08T04:27:43+00:00">February 8, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>actually it can be applied to background images … i did test it and it worked fine with<br>
+-Fire Fox 3.6.13<br>
+-Chrome 8.0.552.237<br>
+-IE 8.0.7600</p>
+<p>PS:  when using the IE it shows the “ActiveX” information bar at top of the page asking the user to Allow the Blocked Content other wise it’ll just show the none flipped version of the background image.. which is  very annoying and could scare users away from the site thinking it’s trying to download some hidden script :)</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even depth-2" id="li-comment-88406">
+
+      <div class="grid group comment-wrap" id="comment-88406">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/dc01fca977ecd246f12cdb47aceb774a?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Kareem Ahmed</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-88406"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-02-08T04:37:49+00:00">February 8, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Also I’d like to add that when you use the Flipping for background images it doesn’t only Flip the “background-image” but also it flips it’s  “background-position” for Both the ” X” and “Y” Values so you’ll have to reverse those too :)</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt depth-2" id="li-comment-99782">
+
+      <div class="grid group comment-wrap" id="comment-99782">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/0a50c19bd4299b946c47e2e2d32dc8ec?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Glaudston</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-99782"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-07-12T16:04:08+00:00">July 12, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>How did you flip just the background?</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even depth-2" id="li-comment-1597843">
+
+      <div class="grid group comment-wrap" id="comment-1597843">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/4b4ef48e7a4aa710133d514751191040?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Ronnie</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-1597843"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2015-11-05T09:34:56+00:00">November 5, 2015</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>But if you wrapped the entire body content into a parent container and set the image to the background, you can do that. I know this is an old post</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-76257">
+
+      <div class="grid group comment-wrap" id="comment-76257">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/480fb4558b901930218fa642f1268f45?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Brian Lang</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-76257"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-05-18T08:45:30+00:00">May 18, 2010</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>When viewed in RSS reader, the flipped image is not flipped :)</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=76257#respond" onclick="return addComment.moveForm( &quot;comment-76257&quot;, &quot;76257&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Brian Lang">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  <ul class="children">
+
+    <li class="comment even depth-2" id="li-comment-76258">
+
+      <div class="grid group comment-wrap" id="comment-76258">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/148652fa347c77364836269ae26a116c?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Robin</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-76258"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-05-18T08:47:26+00:00">May 18, 2010</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Same here ;) (Apple Mail app)</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment byuser comment-author-chriscoyier bypostauthor odd alt depth-2" id="li-comment-76259">
+
+      <div class="grid group comment-wrap" id="comment-76259">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Chris Coyier</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-76259"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-05-18T08:50:53+00:00">May 18, 2010</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Right… that’s because the CSS is applied here on the demo page. RSS readers apply their own CSS to their pages. If you want to try and force your CSS into them, you’ll have to use inline styles and even then it’s no guarantee.</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even depth-2" id="li-comment-1585005">
+
+      <div class="grid group comment-wrap" id="comment-1585005">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/358305f711df439398d11ad9d5d70e36?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Nick Betting</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-1585005"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2014-09-04T01:30:05+00:00">September 4, 2014</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>RSS readers and mail apps have their own way of interpreting html and css and usually only support some code. CSS often doesn’t work correctly. If you want to use the full power of CSS you’ll have to show your content in a modern browser.</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-76270">
+
+      <div class="grid group comment-wrap" id="comment-76270">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/201b88fa8214ad8649fc869e1bd13636?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Bert de Vries</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-76270"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-05-18T13:27:36+00:00">May 18, 2010</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>How about using this for a reflection? Flip an image vertically and reduce the opacity? Possible?</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=76270#respond" onclick="return addComment.moveForm( &quot;comment-76270&quot;, &quot;76270&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Bert de Vries">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  <ul class="children">
+
+    <li class="comment even depth-2" id="li-comment-76276">
+
+      <div class="grid group comment-wrap" id="comment-76276">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/fef26d620363f0f7d62078c2d3ae565c?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Laneth Sffarlenn</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-76276"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-05-18T15:47:55+00:00">May 18, 2010</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Combine the opacity with a CSS3 gradient?</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt depth-2" id="li-comment-76357">
+
+      <div class="grid group comment-wrap" id="comment-76357">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/a1c1225be8d547f7eee7fe94e8a3f7ac?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Matth</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-76357"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-05-20T06:03:04+00:00">May 20, 2010</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>My prediction: YES. It will work perfectly in every browser except IE.</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-76699">
+
+      <div class="grid group comment-wrap" id="comment-76699">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/d093d4fa06e193f9be06db939e12901f?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Rick</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-76699"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-05-27T01:22:09+00:00">May 27, 2010</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Too bad you don’t give Gijs Stegehuis the credits it..</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=76699#respond" onclick="return addComment.moveForm( &quot;comment-76699&quot;, &quot;76699&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Rick">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-76700">
+
+      <div class="grid group comment-wrap" id="comment-76700">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/a2f4acc817b3badbeb0a7d805fe6bce1?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Gijs Stegehuis</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-76700"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-05-27T01:31:24+00:00">May 27, 2010</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>I needed ‘image-rendering: -moz-crisp-edges;’ for this to work properly with a gif arrow in Firefox on OSX. Without this property it was rendered very blurry.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=76700#respond" onclick="return addComment.moveForm( &quot;comment-76700&quot;, &quot;76700&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Gijs Stegehuis">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  <ul class="children">
+
+    <li class="comment even depth-2" id="li-comment-161430">
+
+      <div class="grid group comment-wrap" id="comment-161430">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/d24322bd326692924ab1d24dcef5d839?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Bali Balo</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-161430"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-03-28T01:30:01+00:00">March 28, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Thanks, I had this issue too.</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-80674">
+
+      <div class="grid group comment-wrap" id="comment-80674">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/61673f8b1022f3c3750a5084973e7d13?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Andrew</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-80674"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-07-24T17:45:30+00:00">July 24, 2010</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Perfect – finally – excellent! Is this a CSS3-only property? What is the cross-browser compatibility of this?</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=80674#respond" onclick="return addComment.moveForm( &quot;comment-80674&quot;, &quot;80674&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Andrew">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-even depth-1" id="li-comment-87931">
+
+      <div class="grid group comment-wrap" id="comment-87931">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/e7c97fdd4a4f2a377b814b1978457dcc?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Terry</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-87931"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-01-21T16:15:04+00:00">January 21, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>This would be good for a members site as  a log out page.  Make the log out page a flipped version of the log in page.  Or some variation of the idea.  Maybe even a picture on the log in page can be flipped on the log out page.  Just a thought.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=87931#respond" onclick="return addComment.moveForm( &quot;comment-87931&quot;, &quot;87931&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Terry">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  <ul class="children">
+
+    <li class="comment odd alt depth-2 buried" id="li-comment-279564">
+
+      <div class="grid group comment-wrap" id="comment-279564">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/6ec636f48dd9b2386a272dba2d75d109?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Njnjnheee</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-279564"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-02-08T04:50:18+00:00">February 8, 2013</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>No.</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even depth-2" id="li-comment-1585006">
+
+      <div class="grid group comment-wrap" id="comment-1585006">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/358305f711df439398d11ad9d5d70e36?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Nick Betting</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-1585006"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2014-09-04T01:32:07+00:00">September 4, 2014</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>I have no idea what you mean. Flip the login fields etc? And usually there is no log out page, you just click a button and are logged out.</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-88675">
+
+      <div class="grid group comment-wrap" id="comment-88675">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/33be623400b7a7d062fa32e2606b28be?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Stefan Bergfeldt</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-88675"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-02-15T01:59:41+00:00">February 15, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>This isn’t working for me in IE8. The image isn’t flipped.</p>
+<p>Also, in IE8-compability-mode, the image is actually flipped, but when animating the top-position using jQuery, the image hides when my image “jumps” (I’ve made Kriby run back and forward on the screen, jumping when clicked). Not that the image hides only when flipped.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=88675#respond" onclick="return addComment.moveForm( &quot;comment-88675&quot;, &quot;88675&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Stefan Bergfeldt">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-even depth-1" id="li-comment-94755">
+
+      <div class="grid group comment-wrap" id="comment-94755">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/f4f17b3c5e418876ea44f5eb423941be?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Peter Conerly</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-94755"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-05-23T10:41:01+00:00">May 23, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>This would actually have good applications with an international website that had to switch between Left-to-Right and Right-to-Left formatting.  Most websites are terrible at having a proper Right-to-left UX for Arabic &amp; Hebrew.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=94755#respond" onclick="return addComment.moveForm( &quot;comment-94755&quot;, &quot;94755&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Peter Conerly">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-96842">
+
+      <div class="grid group comment-wrap" id="comment-96842">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/ed42faeb598673c99716d66ce8fd7af7?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Gustavo Vedotti</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-96842"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-06-14T18:42:14+00:00">June 14, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Hi all,</p>
+<p>I am using this CSS code to flip a png image with transparent background, and I’m getting a horrible result (on IE 7, 8 or 9).</p>
+<p>After flipping, image gets a kind of crooked black outline… Any suggestion?</p>
+<p>Cheers,</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=96842#respond" onclick="return addComment.moveForm( &quot;comment-96842&quot;, &quot;96842&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Gustavo Vedotti">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-even depth-1" id="li-comment-97775">
+
+      <div class="grid group comment-wrap" id="comment-97775">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/fa36658d176a9895df1165b52ca23baf?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Billy Brown</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-97775"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-06-24T06:00:09+00:00">June 24, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Here’s if you want an image that flips as a transition:<br>
+<code><br>
+img { display: block; height: 400px; width: 400px;  -webkit-transition: all 1s; }</code></p><code>
+</code><p><code>img:hover { display: block; eight: 400px; width: 400px; -moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); filter: FlipH; -ms-filter: "FlipH"; -webkit-transition: all 1s; }</code></p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=97775#respond" onclick="return addComment.moveForm( &quot;comment-97775&quot;, &quot;97775&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Billy Brown">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  <ul class="children">
+
+    <li class="comment odd alt depth-2" id="li-comment-171504">
+
+      <div class="grid group comment-wrap" id="comment-171504">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/b25e7691aafa1a6c4a2a8882976622c4?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Jessica</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-171504"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-05-18T19:58:48+00:00">May 18, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>can we possibly use these in animation? if so, how?</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-97776">
+
+      <div class="grid group comment-wrap" id="comment-97776">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/fa36658d176a9895df1165b52ca23baf?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Billy Brown</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-97776"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-06-24T06:05:20+00:00">June 24, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Sorry:</p>
+<p><code><br>
+img {<br>
+  display: block;<br>
+  height: HEIGHT OF YOUR IMAGE;<br>
+  width: WIDTH OF YOUR IMAGE;<br>
+  -webkit-transition: all 1s;<br>
+  -moz-transition: all 1s;<br>
+}</code></p><code>
+</code><p><code>img:hover {<br>
+  display: block;<br>
+  height: HEIGHT OF YOUR IMAGE;<br>
+  width: WIDTH OF YOUR IMAGE;<br>
+  IMAGE FLIP CODE<br>
+  -webkit-transition: all 1s;<br>
+  -moz-transition: all 1s;<br>
+}</code></p>
+<p>Tested, and it works</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=97776#respond" onclick="return addComment.moveForm( &quot;comment-97776&quot;, &quot;97776&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Billy Brown">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-99145">
+
+      <div class="grid group comment-wrap" id="comment-99145">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/1870ae14fb174c85b08101a55d17cc66?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Velmurugan</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-99145"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-07-07T05:30:15+00:00">July 7, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>This is really very nice..</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=99145#respond" onclick="return addComment.moveForm( &quot;comment-99145&quot;, &quot;99145&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Velmurugan">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-130388">
+
+      <div class="grid group comment-wrap" id="comment-130388">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/5540796cef3803aa6a9a2bcb62983858?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">kikito</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-130388"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-12-05T10:48:19+00:00">December 5, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>If we combine this with :after, this can probably be used to generate pure CSS reflections with non-webkit browsers.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=130388#respond" onclick="return addComment.moveForm( &quot;comment-130388&quot;, &quot;130388&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to kikito">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-145705">
+
+      <div class="grid group comment-wrap" id="comment-145705">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/30a9d9711d765b04225968b66203857c?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Eduardo</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-145705"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-01-27T10:30:16+00:00">January 27, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Very very good…. thanks</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=145705#respond" onclick="return addComment.moveForm( &quot;comment-145705&quot;, &quot;145705&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Eduardo">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1 buried" id="li-comment-155094">
+
+      <div class="grid group comment-wrap" id="comment-155094">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/063a85820f6b148a1962c8da6070d720?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Amit Deshmukh</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-155094"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-03-02T05:21:01+00:00">March 2, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Thanks buddy,<br>
+  I was searching for the same and after googling it all I was getting is that Flip slide show and all, Thanks a lot for this trick …</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=155094#respond" onclick="return addComment.moveForm( &quot;comment-155094&quot;, &quot;155094&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Amit Deshmukh">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-164277">
+
+      <div class="grid group comment-wrap" id="comment-164277">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/29bf09482cee96a9605b0b096a5f44fd?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Mahbub Alam Khan</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-164277"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-04-10T00:47:35+00:00">April 10, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Wow, Great article. I’ve used your code to rotate background image and it’s work fine.<br>
+Thanks for sharing nice article.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=164277#respond" onclick="return addComment.moveForm( &quot;comment-164277&quot;, &quot;164277&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Mahbub Alam Khan">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-165965">
+
+      <div class="grid group comment-wrap" id="comment-165965">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/cee37c64416daba96d4e69689463ff71?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">bala</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-165965"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-04-18T21:52:14+00:00">April 18, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>I need to break an image and also it should gather again.Else is there anything  new that we can do only with CSS initial version.Give Me some ideas dude.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=165965#respond" onclick="return addComment.moveForm( &quot;comment-165965&quot;, &quot;165965&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to bala">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-166064">
+
+      <div class="grid group comment-wrap" id="comment-166064">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/d2e1972ec132432a0956d2c12529c6b2?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Bali Balo</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-166064"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-04-19T07:20:56+00:00">April 19, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Do you mean like an explosion ?<br>
+With JavaScript (and JQuery) you could easily create some small blocks with your image in background (and background-position depending on where each block is), then move each block independently (and even rotate it with css transforms) to make it look like what you want.<br>
+Then, gathering them again should also be quite easy.</p>
+<p>Do you see what I mean ?<br>
+Without JavaScript, I don’t think this is possible. I mean, it’s quite a specific situation, and it would be incredible to have a CSS-only solution.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=166064#respond" onclick="return addComment.moveForm( &quot;comment-166064&quot;, &quot;166064&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Bali Balo">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  <ul class="children">
+
+    <li class="comment even depth-2" id="li-comment-166065">
+
+      <div class="grid group comment-wrap" id="comment-166065">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/d2e1972ec132432a0956d2c12529c6b2?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Bali Balo</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-166065"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-04-19T07:22:37+00:00">April 19, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Oh. My message was for Bala. My bad.</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-172236">
+
+      <div class="grid group comment-wrap" id="comment-172236">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/3e566a60d4b3da81097b4d30b6243ece?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Tricia Kennedy</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-172236"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-05-23T21:41:33+00:00">May 23, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>My flipped image renders blurry for some reason? strange, but otherwise great trick.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=172236#respond" onclick="return addComment.moveForm( &quot;comment-172236&quot;, &quot;172236&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Tricia Kennedy">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  <ul class="children">
+
+    <li class="comment even depth-2" id="li-comment-172355">
+
+      <div class="grid group comment-wrap" id="comment-172355">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/d2e1972ec132432a0956d2c12529c6b2?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Bali Balo</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-172355"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-05-24T09:24:25+00:00">May 24, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Use <code>image-rendering: -moz-crisp-edges;</code> as said by <strong>Gijs Stegehuis</strong> <a href="http://css-tricks.com/snippets/css/flip-an-image/#comment-76700" rel="nofollow">up there</a>.</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1 buried" id="li-comment-181607">
+
+      <div class="grid group comment-wrap" id="comment-181607">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/c23bf35e77c20f11cdc2da3178f21dca?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Vinay Prajapati</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-181607"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-07-16T07:30:17+00:00">July 16, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Very Nice!</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=181607#respond" onclick="return addComment.moveForm( &quot;comment-181607&quot;, &quot;181607&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Vinay Prajapati">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-197734">
+
+      <div class="grid group comment-wrap" id="comment-197734">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/e0ee9d2b96677cfa872835aadc8f161b?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">seshu</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-197734"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-10-16T02:30:39+00:00">October 16, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>can we apply horizontal flip effect to vertically fliped image i.e what we get when we apply horizontal  flip in vertical direction.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=197734#respond" onclick="return addComment.moveForm( &quot;comment-197734&quot;, &quot;197734&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to seshu">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-246602">
+
+      <div class="grid group comment-wrap" id="comment-246602">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/41e5d74f46bacc7cd89effd3cde8b12d?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">dako</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-246602"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-01-01T21:44:56+00:00">January 1, 2013</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>in IE ONLY,   (filter: FlipH; -ms-filter: “FlipH”; ) causes a black background IF (and here is the weird part) the parent layered div has css rounding elements applied.  (in IE, my class =’round’  was -ms-border-radius:20px; ).  Keep it in mind if you are spending 5 hours looking for a ‘it went black’ bug in IE.  I removed the rounding class, and no blackness.  Odd.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=246602#respond" onclick="return addComment.moveForm( &quot;comment-246602&quot;, &quot;246602&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to dako">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-312330">
+
+      <div class="grid group comment-wrap" id="comment-312330">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/5acb465622034ce4850ef0b6713a7b9c?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Grinn</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-312330"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-03-21T16:55:03+00:00">March 21, 2013</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>What I want to know: WTF are Asia Mustards?</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=312330#respond" onclick="return addComment.moveForm( &quot;comment-312330&quot;, &quot;312330&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Grinn">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1 buried" id="li-comment-430649">
+
+      <div class="grid group comment-wrap" id="comment-430649">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/fe099cf983f57763104cdc3b26ca784b?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Elliott Bailey</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-430649"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-05-01T23:57:46+00:00">May 1, 2013</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Thanks mate – just what I was after!</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=430649#respond" onclick="return addComment.moveForm( &quot;comment-430649&quot;, &quot;430649&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Elliott Bailey">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1 buried" id="li-comment-471901">
+
+      <div class="grid group comment-wrap" id="comment-471901">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/9542c93b4eb3b09df4d508e9422bf298?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Ramesh Chowdarapally</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-471901"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-06-26T04:05:12+00:00">June 26, 2013</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Thanks chris, It’s really useful.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=471901#respond" onclick="return addComment.moveForm( &quot;comment-471901&quot;, &quot;471901&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Ramesh Chowdarapally">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-509221">
+
+      <div class="grid group comment-wrap" id="comment-509221">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/9542c93b4eb3b09df4d508e9422bf298?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Ramesh Chowdarapally</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-509221"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-08-08T22:34:52+00:00">August 8, 2013</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p><strong>Useful information.<br>
+<em>thank you</em></strong></p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=509221#respond" onclick="return addComment.moveForm( &quot;comment-509221&quot;, &quot;509221&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Ramesh Chowdarapally">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-516534">
+
+      <div class="grid group comment-wrap" id="comment-516534">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/b104ae578d6b8894f80758e1127c2c5b?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Manish Kanp</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-516534"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-08-16T05:34:03+00:00">August 16, 2013</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Verry good and usefull consept.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=516534#respond" onclick="return addComment.moveForm( &quot;comment-516534&quot;, &quot;516534&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Manish Kanp">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-535127">
+
+      <div class="grid group comment-wrap" id="comment-535127">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/fce97b35c5023e9eafe2168270a75bca?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">geoffrey</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-535127"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-09-04T09:50:49+00:00">September 4, 2013</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Hello, thanks for your article.<br>
+I’m using this but on Y axe<br>
+I would love to know if its possible -and how- making this effect with a scroll.</p>
+<p>i mean, the image reverse when i scroll down.<br>
+Any idea ?<br>
+Thanks</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=535127#respond" onclick="return addComment.moveForm( &quot;comment-535127&quot;, &quot;535127&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to geoffrey">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-649602">
+
+      <div class="grid group comment-wrap" id="comment-649602">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/92ee0f5bc54bf26910506d3fc6e76386?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Ahmed Khattab</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-649602"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-11-10T06:56:29+00:00">November 10, 2013</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>This is a good practice, we could use it to flip images, icons, and also for <strong>icon fonts</strong>!</p>
+<p>For flipping background, I can till this flip all the element, not just graphic inside it, so you couldn’t use it to flip just backgrounds, it will flip text also!</p>
+<p>Unfortunately, we will need to wait some extra time “may be months, may be years” to relay on it, as for now there are a lot of people uses <strong>IE8</strong> to brows websites.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=649602#respond" onclick="return addComment.moveForm( &quot;comment-649602&quot;, &quot;649602&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Ahmed Khattab">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-755491">
+
+      <div class="grid group comment-wrap" id="comment-755491">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/3c30cf129d2668a2bd6a3a307b76b796?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Ikuzou Miyashita</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-755491"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-12-03T19:38:04+00:00">December 3, 2013</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>“Mirror Tube”<br>
+Paste any Youtube or vimeo video urls ,and you can see them with horizontally-flipped version(It not work on mobile and internet explorer).<br>
+<a href="http://concreteage.blogspot.jp/p/youtubevimeourl-function-youtube-this.html" rel="nofollow">http://concreteage.blogspot.jp/p/youtubevimeourl-function-youtube-this.html</a></p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=755491#respond" onclick="return addComment.moveForm( &quot;comment-755491&quot;, &quot;755491&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Ikuzou Miyashita">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1 buried" id="li-comment-768220">
+
+      <div class="grid group comment-wrap" id="comment-768220">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/940d28d0ad7719c2bd89ce86788f0e83?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Prazi</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-768220"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-12-05T23:24:06+00:00">December 5, 2013</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Spot on. Thanks for the trick.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=768220#respond" onclick="return addComment.moveForm( &quot;comment-768220&quot;, &quot;768220&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Prazi">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-1073039">
+
+      <div class="grid group comment-wrap" id="comment-1073039">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/3c30cf129d2668a2bd6a3a307b76b796?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Ikuzou Miyashita</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-1073039"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2014-01-10T03:27:39+00:00">January 10, 2014</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Hi</p>
+<p>Recently, I updated “Mirrortube”.<br>
+It became able to play any Youtube or Vimeo video in monochrome.<br>
+please check it.</p>
+<p>MirrorTube</p>
+<p><a href="http://concreteage.blogspot.jp/p/youtubevimeourl-function-youtube-this.html" rel="nofollow">http://concreteage.blogspot.jp/p/youtubevimeourl-function-youtube-this.html</a></p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=1073039#respond" onclick="return addComment.moveForm( &quot;comment-1073039&quot;, &quot;1073039&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Ikuzou Miyashita">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-1584487">
+
+      <div class="grid group comment-wrap" id="comment-1584487">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/6d8947b31c1f4242ba2ef1a2ed2631a6?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">randomguy</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-1584487"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2014-08-18T11:39:07+00:00">August 18, 2014</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>it’s scale(-1) now</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=1584487#respond" onclick="return addComment.moveForm( &quot;comment-1584487&quot;, &quot;1584487&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to randomguy">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-1585309">
+
+      <div class="grid group comment-wrap" id="comment-1585309">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/daea8a54c0dd017309f167d1ae7bb76b?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Yorick Brown</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-1585309"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2014-09-16T08:10:41+00:00">September 16, 2014</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>I came across this code used for an arrow background image, which was made to point down or up according to class.</p>
+<p>FlipV worked for most browsers but it caused an issue in IE9, by displaying the arrow as both up and down, so it turned into a square!</p>
+<p>I fixed it by simply using transform (though I had to then reset the filter):</p>
+<pre><code>.flipped.down  {
+   -ms-transform: rotate(180deg); 
+   -ms-filter: initial;
+}
+</code></pre>
+<p>Hope that helps anyone with a similar issue.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=1585309#respond" onclick="return addComment.moveForm( &quot;comment-1585309&quot;, &quot;1585309&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Yorick Brown">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  <ul class="children">
+
+    <li class="comment even depth-2" id="li-comment-1592625">
+
+      <div class="grid group comment-wrap" id="comment-1592625">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/2609902e3a2dee2bcdc7e8cea3409983?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Meagan Fisher</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-1592625"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2015-02-18T15:43:21+00:00">February 18, 2015</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Thanks for posting this fix!</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1589717">
+
+      <div class="grid group comment-wrap" id="comment-1589717">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/ec455917a7c71e0b842b6af1a0f52093?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Veli</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-1589717"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2015-01-09T08:14:43+00:00">January 9, 2015</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>I have succesfully managed to flip an image when clicking on it. Thanks for the info! But how to flip it back? Changing the id value to “regular” doesn’t work. Don’t you have to make a CSS style for that too?</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=1589717#respond" onclick="return addComment.moveForm( &quot;comment-1589717&quot;, &quot;1589717&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Veli">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-even depth-1" id="li-comment-1593249">
+
+      <div class="grid group comment-wrap" id="comment-1593249">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/dc6f96bdf1150ff0f2d90a8b8ccc81d8?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">amine</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-1593249"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2015-03-18T08:08:38+00:00">March 18, 2015</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>a flipping effect working in IE is visible on the website seeveeze. Cant post the url apparently, just search seeveeze in google <a href="http://www.seeveeze.com/" rel="nofollow">http://www.seeveeze.com</a></p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=1593249#respond" onclick="return addComment.moveForm( &quot;comment-1593249&quot;, &quot;1593249&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to amine">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1594934">
+
+      <div class="grid group comment-wrap" id="comment-1594934">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/fe9f51754c167f031eb03182555b97df?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Eugene</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-1594934"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2015-05-28T06:44:34+00:00">May 28, 2015</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>what’s wrong with transform: rotateY(180deg) ?</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=1594934#respond" onclick="return addComment.moveForm( &quot;comment-1594934&quot;, &quot;1594934&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Eugene">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  <ul class="children">
+
+    <li class="comment even depth-2" id="li-comment-1600102">
+
+      <div class="grid group comment-wrap" id="comment-1600102">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/a0c52ed4d6c083c43c23bdf4177b8f7e?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">iamcastelli</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-1600102"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2016-03-08T10:33:04+00:00">March 8, 2016</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Sometimes you don’t need just the rotation. You need a <strong>mirror reflection</strong> and <em>flipping</em> it does the trick</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-1596469">
+
+      <div class="grid group comment-wrap" id="comment-1596469">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/e45f174307d258f4dda9bedfd298f5bc?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Sumit Kapoor</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-1596469"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2015-08-19T02:39:17+00:00">August 19, 2015</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Here is my example of flipping a div vertically</p>
+<p><a href="https://uisnip.appspot.com/?share=/s/9tjc3v4b5wt6mcm/VerticalFlip-2?dl=0" rel="nofollow">https://uisnip.appspot.com/?share=/s/9tjc3v4b5wt6mcm/VerticalFlip-2?dl=0</a></p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=1596469#respond" onclick="return addComment.moveForm( &quot;comment-1596469&quot;, &quot;1596469&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Sumit Kapoor">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-1597511">
+
+      <div class="grid group comment-wrap" id="comment-1597511">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/eba6a32b229550b4790a50ed505b39ad?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Aîz</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-1597511"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2015-10-18T02:21:05+00:00">October 18, 2015</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Thanks! It’s the easyest and lightest way to flip an element I found on the net. Congratulations.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=1597511#respond" onclick="return addComment.moveForm( &quot;comment-1597511&quot;, &quot;1597511&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Aîz">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-1597661">
+
+      <div class="grid group comment-wrap" id="comment-1597661">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/7138bd68921e7a19e72a4bf3c41b5215?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Adam</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-1597661"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2015-10-22T08:17:38+00:00">October 22, 2015</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Elegant snip of CSS, thank you :)</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=1597661#respond" onclick="return addComment.moveForm( &quot;comment-1597661&quot;, &quot;1597661&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Adam">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-1598966">
+
+      <div class="grid group comment-wrap" id="comment-1598966">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/103c8ad2bfdae432fd3c772023629eb1?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Anna</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-1598966"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2016-01-10T04:13:31+00:00">January 10, 2016</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Flip images already may ad value for it, but if there is a title or words on it, i think it is difficult to give any meaning for this image.<br>
+<a href="http://www.highhdwallpapers.com/" rel="nofollow">http://www.highhdwallpapers.com/</a></p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=1598966#respond" onclick="return addComment.moveForm( &quot;comment-1598966&quot;, &quot;1598966&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Anna">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-1599745">
+
+      <div class="grid group comment-wrap" id="comment-1599745">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/b549516a2d60e755082894eb847d93f1?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Mary P.</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-1599745"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2016-02-19T19:16:33+00:00">February 19, 2016</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>ou can flip images with CSS! Possible scenario: having only one graphic for an “arrow”, but flipping it around to point in different directions.<br>
+<a href="http://xn--chassetrsordofus-iqb.com/" rel="nofollow">chasse au trésor dofus</a></p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=1599745#respond" onclick="return addComment.moveForm( &quot;comment-1599745&quot;, &quot;1599745&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Mary P.">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-1600547">
+
+      <div class="grid group comment-wrap" id="comment-1600547">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/1551893d9c0b3fa8bd3c25317349cfd7?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Gedir</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-1600547"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2016-03-26T17:09:23+00:00">March 26, 2016</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Nice script. Work – 100%! Thank’s ⇨✪✪✪✪✪</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=1600547#respond" onclick="return addComment.moveForm( &quot;comment-1600547&quot;, &quot;1600547&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Gedir">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-1600728">
+
+      <div class="grid group comment-wrap" id="comment-1600728">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/1551893d9c0b3fa8bd3c25317349cfd7?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Abah</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-1600728"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2016-04-05T04:59:31+00:00">April 5, 2016</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Cool! 100% work in my blog (#firefox#)</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=1600728#respond" onclick="return addComment.moveForm( &quot;comment-1600728&quot;, &quot;1600728&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Abah">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-1603210">
+
+      <div class="grid group comment-wrap" id="comment-1603210">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/87c786d40b4baa0e8620762486483f6a?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Carl Johnson</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-1603210"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2016-08-03T22:39:50+00:00">August 3, 2016</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>This is not flipping the real image? It only shows the image flipped right? I tried a website online which flipped my pictures and upload to imgur. It was cool ( <a href="http://flippicture.com/" rel="nofollow">http://flippicture.com/</a>). But I really wonder what’s the way they do it?? Anyone mind to enlighten me?</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=1603210#respond" onclick="return addComment.moveForm( &quot;comment-1603210&quot;, &quot;1603210&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Carl Johnson">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-1607395">
+
+      <div class="grid group comment-wrap" id="comment-1607395">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/cf371bb6e50dc673a67da81e7314b961?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Jose Paolo Ondevilla</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/flip-an-image/#comment-1607395"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2017-03-12T00:23:39+00:00">March 12, 2017</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Thanks! It’s so easy to implement. Used it to flip horizontally a font awesome icon and it worked!</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/?replytocom=1607395#respond" onclick="return addComment.moveForm( &quot;comment-1607395&quot;, &quot;1607395&quot;, &quot;respond&quot;, &quot;6406&quot; )" aria-label="Reply to Jose Paolo Ondevilla">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+  </ol>
+
+
+
+  <div id="respond" class="respond group">
+
+    
+      <form action="https://css-tricks.com/wp-comments-post.php" method="post" id="comment-form" class="group comment-form">
+
+        <h2>
+          Submit a Comment
+        </h2>
+
+        
+          <div class="grid nopadding group commenter-inputs">
+
+            <div class="grid-1-2">
+              <label for="author" class="screen-reader">Name*</label>
+              <input type="text" placeholder="Name (required)" required="" name="author" id="author" value="" class="infoput">
+            </div>
+
+            <div class="grid-1-2">
+              <label for="email" class="screen-reader">Email</label>
+              <input placeholder="Email (required)" required="" type="email" name="email" id="email" value="" class="infoput">
+            </div>
+
+          </div>
+          
+          <div class="comment-wrap">
+            <label for="comment" class="screen-reader">Comment</label>
+            <textarea name="comment" id="comment" cols="100" rows="10" placeholder="Your comment here. Be cool."></textarea><div id="markdown_comment" class="comment-content markdown-comment-preview"></div><div class="preview-buttons" id="preview-buttons">          <a href="https://css-tricks.com/snippets/css/flip-an-image/#0" id="writeCommentButton" class="commentPreviewButton active">Write</a>          <a href="https://css-tricks.com/snippets/css/flip-an-image/#0" id="previewCommentButton" class="commentPreviewButton">Preview</a></div>
+          </div>
+
+          <input type="hidden" name="comment_post_ID" value="6406" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+
+          <p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="7870ab2ac5"></p>		<p class="antispam-group antispam-group-q" style="clear: both; display: none;">
+			<label>Copy and paste this code: <strong class="antspmpro-input-a">micuno</strong> <span class="required">*</span></label>
+			<input type="hidden" name="antspmpro-a" class="antispam-control antispam-control-a" value="micuno">
+			<input type="text" name="antspmpro-q-luwele" class="antispam-control antispam-control-q" value="4.1">
+		</p>
+		<p class="antispam-group antispam-group-e" style="display: none;">
+			<label>Leave this field empty</label>
+			<input type="text" name="antspmpro-e-email-url-website-luwele" class="antispam-control antispam-control-e" value="">
+		</p>
+<p style="display: none;"></p><!-- MailChimp for WordPress v4.1.0 - https://mc4wp.com/ --><input type="hidden" name="_mc4wp_subscribe_wp-comment-form" value="0"><p class="mc4wp-checkbox mc4wp-checkbox-wp-comment-form"><label><input type="checkbox" name="_mc4wp_subscribe_wp-comment-form" value="1" checked="checked"><span>Get the CSS-Tricks newsletter</span></label></p><!-- / MailChimp for WordPress -->
+          <div class="comment-form-button-wrap">
+            <input name="submit" type="submit" class="button" id="submit" value="Submit Comment">
+
+            <a rel="nofollow" id="cancel-comment-reply-link" href="https://css-tricks.com/snippets/css/flip-an-image/#respond" style="display:none;">Cancel Reply</a>          </div>
+
+      </form>
+
+      <div class="comment-reminders">
+
+        <div>
+          <h4>Posting Code</h4>
+
+          <p>You may write comments in <strong>Markdown</strong>. This makes code easy to post, as you can write inline code like `&lt;div&gt;this&lt;/div&gt;` or multiline blocks of code in triple backtick fences (```) with double new lines before and after.</p>
+        </div>
+
+        <div>
+          <h4>Code of Conduct</h4>
+
+          <p>Absolutely anyone is welcome to submit a comment here. But not all comments will be posted. Think of it like writing a letter to the editor. All submitted comments will be read, but not all published. Published comments will be on-topic, helpful, and further the discussion or debate.</p>
+        </div>
+
+        <div>
+          <h4>Want to tell us something privately?</h4>
+
+          <p>Feel free to use our <a href="https://css-tricks.com/contact/">contact form</a>. That's a great place to let us know about typos or anything off-topic.</p>
+        </div>
+
+      </div>
+
+    
+  </div>
+
+</section>    </div>
+  </div>
+</div>
+
+<aside class="entry-unrelated sidebar sidebar-right">
+
+  
+  
+      <div class="module module-hired">
+
+  <a href="https://hired.com/join/?utm_source=syndicate&amp;utm_medium=sponsor&amp;utm_campaign=(b2c)(l-all)(r-swe)(q1-17-csstricks-display-unit)&amp;utm_content=display-ad" target="_blank" rel="noopener" class="hired-ad">
+
+    <div class="hired-mover">
+      <div class="hired-tagline">
+        Find Your
+        <br>
+        <span>
+          Opportunity
+        </span>
+      </div>
+      <img src="./Flip an Image _ CSS-Tricks_files/hired-on-red.png" alt="" class="hired-ad-image">
+    </div>
+
+  </a>
+
+</div>  
+      <div class="module module-padded module-jobs">
+
+  <h4 class="h4">Front-End Jobs</h4>
+
+  
+  <ul class="job-list">
+
+        <li>
+            <a href="http://codepen.io/url/job/rAKNLz">
+        <strong>
+          EF Education First        </strong>
+        is hiring a
+        UI Web Developer      </a>
+    </li>
+        <li>
+            <a href="http://codepen.io/url/job/ZEKEWn">
+        <strong>
+          3D Hubs        </strong>
+        is hiring a
+        Front-End Lead      </a>
+    </li>
+        <li>
+            <a href="http://codepen.io/url/job/rDKXEZ">
+        <strong>
+          Opentrons        </strong>
+        is hiring a
+         Robots for Biologists: Senior Front End Engineer      </a>
+    </li>
+    
+  </ul>
+
+  <div class="button-wrap">
+
+    <a href="https://css-tricks.com/jobs/" class="button full-width-button">See More Jobs</a>
+    <a href="https://codepen.io/job/new/" class="button full-width-button">Post a Job</a>
+  </div>
+
+</div>  
+      <div class="module module-squarespace">
+      <div id="bsap_1306801" class="bsarocks bsap_3469a2a501a9e18091036aa0c89f9dcb"></div>
+    </div>
+  
+      <div class="module module-ad wufoo-ad-6">
+
+  <a href="https://ad.doubleclick.net/ddm/clk/303181152;128762502;s" id="wufoo-ad-6">
+
+    <svg viewBox="0 0 612 412" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <g class="wufoo-logo">
+        <path id="w" d="M106,177.61L61.82,78.31l29.92-5.82,13.52,37.39c4.19,11.67,8.74,25.19,12.51,35.5l0.31-.06c-0.74-12-1-24.93-1.16-38l-0.81-39.54L145.87,62l14.28,38.84c4.16,11.52,7.62,21.89,11.29,33.34l0.31-.06C171,122.2,170.49,109.51,170,97L168.7,57.51,196.92,52l-5.37,108.93-30.38,5.91L146.3,127.5c-3.31-8.8-6.59-18.25-10.38-30.31l-0.31.06c0.7,12.67,1.21,22.65,1.16,32.27l0,42.09Z" stroke="#231f20" style="stroke-dashoffset: 270.45; stroke-dasharray: 828.254px, 838.254px; fill: transparent; stroke: rgb(0, 0, 0);"></path>
+        <path id="u" d="M231.82,81.64l-8.34,59.42c-2.23,15.87,1.95,25.65,13,27.2,11.2,1.57,17.8-5.91,20.14-22.55l8.34-59.42,28.16,4L285,148.11c-4.54,32.36-23,46.42-52.41,42.29-28.78-4-41.66-21.87-36.92-55.63l8-57.09Z" stroke="#231f20" style="stroke-dashoffset: 263.24; stroke-dasharray: 515.951px, 525.951px; fill: transparent; stroke: rgb(0, 0, 0);"></path>
+        <path id="f" d="M286.14,65.84l67.77-5.65,1.92,23-39.44,3.29L318,106.05,355.11,103l1.9,22.85-37.09,3.09L323.26,169l-28.33,2.36Z" stroke="#231f20" style="stroke-dashoffset: 310.918; stroke-dasharray: 423.193px, 433.193px; fill: transparent; stroke: rgb(0, 0, 0);"></path>
+        <path id="o-1" d="M461,130.16c0,34.1-20.43,55.78-53.11,55.78-32.84,0-50.91-24.67-50.91-54.05,0-30.8,20.27-55.31,52.64-55.31C443.75,76.58,461,101.88,461,130.16Zm-74,1.26c0,19.8,8.64,32.06,22.31,32.06S431,150.12,431,131.1C431,112.88,422.85,99,409.18,99,395.67,99,387,111.93,387,131.42Z" stroke="#231f20" style="stroke-dashoffset: 515.074; stroke-dasharray: 0px, 999999px; fill: transparent; stroke: rgb(0, 0, 0);"></path>
+        <path id="o-2" d="M550.18,104.47c0,34.1-20.43,55.78-53.11,55.78-32.84,0-50.91-24.67-50.91-54.05,0-30.8,20.27-55.31,52.64-55.31C532.9,50.89,550.18,76.19,550.18,104.47Zm-74,1.26c0,19.8,8.64,32.06,22.31,32.06s21.68-13.36,21.68-32.37c0-18.23-8.17-32.06-21.84-32.06C484.81,73.36,476.17,86.25,476.17,105.73Z" stroke="#231f20" style="stroke-dashoffset: 514.997; stroke-dasharray: 0px, 999999px; fill: transparent; stroke: rgb(0, 0, 0);"></path>
+      </g>
+
+      <rect x="60" y="331" width="490" height="63" fill="#fff" stroke="#231f20"></rect>
+
+      <text transform="translate(59 315)" font-size="31" fill="#231f20" font-weight="700">Build custom web forms easily.</text>
+      <text transform="translate(77 371)" font-size="31" fill="#969696">Let's get started!</text>
+
+      <g id="dino">
+        <path fill="#E41E26" d="M533.6,232.7c-0.3-0.1-0.6-0.2-0.9-0.3C533,232.5,533.3,232.6,533.6,232.7z M535.1,233.1
+  		c-0.3,0-0.6-0.1-0.9-0.2C534.5,233,534.7,233,535.1,233.1z M536.6,233.2c-0.3,0-0.7,0-1-0.1C535.9,233.2,536.3,233.2,536.6,233.2z
+  		 M531.2,231.7c0.3,0.1,0.6,0.3,0.8,0.4C531.8,232,531.5,231.8,531.2,231.7z M538.6,233.2c-0.5,0.1-1,0.1-1.5,0.1
+  		C537.6,233.3,538.1,233.3,538.6,233.2z M528.4,229.9c0.3,0.2,0.6,0.4,0.8,0.6C528.9,230.3,528.7,230.1,528.4,229.9z M524.2,226.1
+  		c0.3,0.3,0.6,0.6,0.9,0.9C524.8,226.7,524.5,226.4,524.2,226.1z M527,228.8c0.3,0.2,0.6,0.5,0.8,0.7
+  		C527.5,229.2,527.3,229,527,228.8z M525.6,227.5c0.3,0.3,0.6,0.5,0.8,0.8C526.1,228,525.9,227.8,525.6,227.5z M518.7,219.4
+  		c0.3,0.5,0.7,0.9,1,1.4C519.4,220.3,519.1,219.9,518.7,219.4z M517.4,217.4c0.4,0.5,0.7,1.1,1.1,1.6
+  		C518.1,218.5,517.8,218,517.4,217.4z M520.1,221.2c0.3,0.4,0.6,0.8,0.9,1.2L520.1,221.2z M521.4,223c0.3,0.4,0.6,0.8,0.9,1.1
+  		C522,223.7,521.7,223.3,521.4,223z M522.8,224.6c0.3,0.3,0.6,0.7,0.9,1C523.4,225.2,523.1,224.9,522.8,224.6z M529.8,230.9
+  		c0.3,0.2,0.6,0.3,0.8,0.5C530.4,231.2,530.1,231,529.8,230.9z"></path>
+        <path fill="#8EC23F" d="M536.6,233.2c-0.3,0-0.7,0-1-0.1C535.9,233.2,536.3,233.2,536.6,233.2z M535.1,233.1
+  		c-0.3,0-0.6-0.1-0.9-0.2C534.5,233,534.7,233,535.1,233.1z M533.6,232.7c-0.3-0.1-0.6-0.2-0.9-0.3
+  		C533,232.5,533.3,232.6,533.6,232.7z M531.2,231.7c0.3,0.1,0.6,0.3,0.8,0.4C531.8,232,531.5,231.8,531.2,231.7z M538.6,233.2
+  		c-0.5,0.1-1,0.1-1.5,0.1C537.6,233.3,538.1,233.3,538.6,233.2z M525.6,227.5c0.3,0.3,0.6,0.5,0.8,0.8
+  		C526.1,228,525.9,227.8,525.6,227.5z M524.2,226.1c0.3,0.3,0.6,0.6,0.9,0.9C524.8,226.7,524.5,226.4,524.2,226.1z M528.4,229.9
+  		c0.3,0.2,0.6,0.4,0.8,0.6C528.9,230.3,528.7,230.1,528.4,229.9z M522.8,224.6c0.3,0.3,0.6,0.7,0.9,1
+  		C523.4,225.2,523.1,224.9,522.8,224.6z M521.4,223c0.3,0.4,0.6,0.8,0.9,1.1C522,223.7,521.7,223.3,521.4,223z M517.4,217.4
+  		c0.4,0.5,0.7,1.1,1.1,1.6C518.1,218.5,517.8,218,517.4,217.4z M518.7,219.4c0.3,0.5,0.7,0.9,1,1.4
+  		C519.4,220.3,519.1,219.9,518.7,219.4z M520.1,221.2c0.3,0.4,0.6,0.8,0.9,1.2L520.1,221.2z M527,228.8c0.3,0.2,0.6,0.5,0.8,0.7
+  		C527.5,229.2,527.3,229,527,228.8z M529.8,230.9c0.3,0.2,0.6,0.3,0.8,0.5C530.4,231.2,530.1,231,529.8,230.9z"></path>
+
+        <lineargradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="643.465" y1="316.6403" x2="597.6864" y2="82.4081" gradientTransform="matrix(0.9533 -0.3021 0.3021 0.9533 -50.5851 215.0953)">
+          <stop offset="6.000000e-03" style="stop-color:#1E7086"></stop>
+          <stop offset="0.176" style="stop-color:#33839D"></stop>
+          <stop offset="0.348" style="stop-color:#4192B1"></stop>
+          <stop offset="0.473" style="stop-color:#4699BA"></stop>
+          <stop offset="0.613" style="stop-color:#4293B2"></stop>
+          <stop offset="0.792" style="stop-color:#3685A0"></stop>
+          <stop offset="0.991" style="stop-color:#207187"></stop>
+          <stop offset="1" style="stop-color:#1E7086"></stop>
+        </lineargradient>
+        <path fill="url(#SVGID_2_)" d="M639.5,190.8c-3.4-36.5,17.6-118.2-108.5-109.7l0,0c0,0-23.1,1-21.9,23.3
+  		c1.2,22.4,6.2,36.9,9.6,50.4c0,0-21.8,20.1-16.1,33.8c5.7,13.7,20.7,46.7,35.9,44.6c15.3-2.1,48.4-15.3,61.4-23.1
+  		c0,0,7,72.4,9.4,99.9c0.7,7.9,2.1,22.4,5.2,41.2c18.6-9.2,37.3-18.3,56.1-27.2C654.3,275.8,641.9,216.3,639.5,190.8z"></path>
+
+        <ellipse transform="matrix(0.9533 -0.3021 0.3021 0.9533 -15.9028 180.912)" fill="#FFFFFF" cx="576.9" cy="141.9" rx="13" ry="22.9"></ellipse>
+
+        <ellipse transform="matrix(0.9533 -0.3021 0.3021 0.9533 -16.5344 179.6383)" fill="#231815" cx="572.5" cy="143.3" rx="8.3" ry="14.7"></ellipse>
+        <path fill="#85BFD2" d="M621.6,237.7c-1.1-8.9-9.4-42.7-11.6-46.2c-2.1-3.4-4.9-18.6-47.2,7.1c-31.2,18.9-42.9,18.3-46.8,16.7
+  		c6.5,10.3,14.5,18.9,22.5,17.8c15.2-2.1,48.4-15.3,61.4-23.1c0,0,7,72.4,9.4,99.9c0.7,7.9,2.1,22.4,5.2,41.2
+  		c8.1-4,16.2-8,24.3-11.9C627.4,287.8,622.2,242.4,621.6,237.7z"></path>
+        <g opacity="0.6">
+
+          <lineargradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="506.196" y1="467.0849" x2="553.5162" y2="428.8841" gradientTransform="matrix(0.9533 -0.3021 -0.3021 -0.9533 134.293 798.5026)">
+            <stop offset="0" style="stop-color:#7AB3C4"></stop>
+            <stop offset="0.87" style="stop-color:#7AB3C4"></stop>
+            <stop offset="1" style="stop-color:#7AB3C4"></stop>
+          </lineargradient>
+          <path fill="url(#SVGID_3_)" d="M517.3,217.2c-0.4-0.6-0.8-1.2-1.2-1.8c0,0,0,0,0,0C516.5,216,516.9,216.6,517.3,217.2z"></path>
+
+          <lineargradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="553.1611" y1="525.1908" x2="600.4362" y2="487.0253" gradientTransform="matrix(0.9533 -0.3021 -0.3021 -0.9533 134.293 798.5026)">
+            <stop offset="0" style="stop-color:#7AB3C4"></stop>
+            <stop offset="0.87" style="stop-color:#7AB3C4"></stop>
+            <stop offset="1" style="stop-color:#7AB3C4"></stop>
+          </lineargradient>
+          <path fill="url(#SVGID_4_)" d="M538.2,100c12.1-9.4,47.7-11.3,71-6c-16-9.9-40.5-15.4-78.2-12.9c0,0-23.1,1-21.9,23.3
+  			s6.2,36.9,9.6,50.4c0,0-21.8,20.1-16.1,33.8c2.7,6.5,7.5,17.4,13.5,26.7c3.5,1.4,13,2,36.6-10.9c-0.4-1.7-1.2-4-2.6-6.8
+  			c-6-11.7-16.1-20.8-6.2-35.3C553.8,147.8,524.3,110.8,538.2,100z"></path>
+        </g>
+        <path fill="#1E7086" d="M533.8,137.1c2.6,9.5,1.4,13-1,13.7c-2.4,0.7-5-1.8-7.6-11.3c-2.6-9.5-2.8-17.7-0.4-18.4
+  		C527.1,120.5,531.2,127.6,533.8,137.1z"></path>
+
+        <lineargradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="681.5992" y1="201.3821" x2="624.5172" y2="323.9237" gradientTransform="matrix(0.9533 -0.3021 0.3021 0.9533 -50.5851 215.0953)">
+          <stop offset="0" style="stop-color:#7AB3C4"></stop>
+          <stop offset="0.86" style="stop-color:#7AB3C4"></stop>
+          <stop offset="1" style="stop-color:#7AB3C4"></stop>
+        </lineargradient>
+        <path opacity="0.4" fill="url(#SVGID_5_)" d="M639.8,193.5c-3.4,3.6-9,11.7-7,23.6
+  		c0,0,7.2,57.4,25.2,112.9c4.2-2,8.3-4,12.5-6C654.9,277.5,642.7,220.3,639.8,193.5z"></path>
+
+        <lineargradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="611.5856" y1="236.8385" x2="647.111" y2="236.8385" gradientTransform="matrix(0.9533 -0.3021 0.3021 0.9533 -50.5851 215.0953)">
+          <stop offset="0" style="stop-color:#4699BA"></stop>
+          <stop offset="0.951" style="stop-color:#4699BA"></stop>
+          <stop offset="1" style="stop-color:#4699BA"></stop>
+        </lineargradient>
+        <path fill="url(#SVGID_6_)" d="M623.9,218.4c-3.2-25.8-11.1-40.6-11.1-40.6c3.7-7.1-2.9-17.7-2.9-17.7
+  		c5.7,13.7-27.3,27.3-27.3,27.3l-0.2,0.9c23.7-10.1,25.8,0.5,27.6,3.3c2.1,3.4,10.5,37.3,11.6,46.2c0.6,4.7,5.8,50.1,17.2,101.6
+  		c2.3-1.1,4.5-2.2,6.8-3.3C637.6,304.6,626.9,242.5,623.9,218.4z"></path>
+
+        <lineargradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="540.0744" y1="428.1269" x2="622.0959" y2="428.1269" gradientTransform="matrix(0.9533 -0.3021 -0.3021 -0.9533 134.293 798.5026)">
+          <stop offset="0" style="stop-color:#FFFFFF"></stop>
+          <stop offset="0.87" style="stop-color:#FFFFFF"></stop>
+          <stop offset="1" style="stop-color:#FFFFFF"></stop>
+        </lineargradient>
+        <path opacity="0.35" fill="url(#SVGID_7_)" d="M538.6,233.2c15.3-2.1,48.4-15.3,61.4-23.1
+  		c0.3-11.9-18.7,0-33,3.6c-9.6,2.4-14-3.9-15.8-8.4c-22.5,12-31.6,11.4-35.1,10C522.6,225.7,530.5,234.3,538.6,233.2z"></path>
+
+        <lineargradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="592.8458" y1="312.0763" x2="606.6599" y2="312.0763" gradientTransform="matrix(0.9533 -0.3021 0.3021 0.9533 -50.5851 215.0953)">
+          <stop offset="0" style="stop-color:#FFFFFF"></stop>
+          <stop offset="1" style="stop-color:#FFFFFF"></stop>
+        </lineargradient>
+        <path opacity="0.35" fill="url(#SVGID_8_)" d="M617.7,315.7l-8.1-1.9c0.8,8.3,2.2,21.3,4.8,37.4
+  		c3.1-1.5,6.3-3.1,9.4-4.6C619.5,327.7,617.7,315.7,617.7,315.7z"></path>
+      </g>
+    </svg>
+
+    <div style="padding: 35px;">
+      <span class="button full-width-button">
+        Sign Up Now!
+      </span>
+    </div>
+
+  </a>
+
+  <img src="https://ad.doubleclick.net/ddm/ad/N7439.1063086.CSS-TRICKS.COM/B7043538.128762502;sz=1x1;ord=1492530713;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?" alt="" style="display: none !important;">
+
+</div>  
+</aside>
+
+
+  </div>
+
+  <footer class="site-footer footer-newsletter">
+
+    <div class="footer-section-1"></div>
+
+    <div class="footer-section-2">
+
+      <img src="./Flip an Image _ CSS-Tricks_files/get-the-newsletter.png" alt="Get the Newsletter!">
+
+      <form action="https://chriscoyier.us2.list-manage.com/subscribe/post?u=155f5a9ccc4e24c318130cace&amp;id=197f127a68" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+
+        <p class="mc-field-group">
+          <label for="mce-EMAIL" class="screen-reader">Email Address</label>
+          <input type="email" name="EMAIL" class="required email mailchimp-email-input" id="mce-EMAIL">
+          <svg class="icon-email" width="20px" height="15px">
+            <use xlink:href="#icon-email"></use>
+          </svg>
+          <input type="submit" value="Subscribe" name="Subscribe" id="mc-embedded-subscribe" class="button subscribe-button">
+        </p>
+        <div id="mce-responses" class="clear">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>
+        <div style="position: absolute; left: -9999px; top: -9999px"><input type="text" name="b_155f5a9ccc4e24c318130cace_197f127a68" value=""></div>
+
+      </form>
+    </div>
+
+    <div class="footer-section-3">
+      Lots of great stuff that isn't published anywhere else!
+    </div>
+
+  </footer>
+
+    <footer class="site-footer footer-mediatemple">
+
+    <div class="footer-section-1"></div>
+    <div class="footer-section-2">
+      <a href="https://mediatemple.net/landing/csstricks/?utm_source=CSS-Tricks&amp;utm_medium=display&amp;utm_campaign=heaeder-box"><img class="mt-img" src="./Flip an Image _ CSS-Tricks_files/mediatemple-logo-white-superwide.svg" alt="Media Temple"></a>
+    </div>
+    <div class="footer-section-3">
+      <a href="https://mediatemple.net/landing/csstricks/?utm_source=CSS-Tricks&amp;utm_medium=display&amp;utm_campaign=heaeder-box">CSS-Tricks web host since day one. Save 20% with code <strong>CSSTRICKS</strong>.</a>
+    </div>
+
+  </footer>
+  
+  <footer class="site-footer footer-colophon">
+
+    <div class="footer-section-1"></div>
+
+    <div class="footer-section-2">
+      <p>CSS-Tricks* is created, written by, and maintained by <a href="http://chriscoyier.net/">Chris Coyier</a> and <a href="https://css-tricks.com/about/">a team</a> of swell people. It is built on <a href="http://wordpress.org/">WordPress</a>, hosted by <a href="https://mediatemple.net/landing/csstricks/?utm_source=CSS-Tricks&amp;utm_medium=display&amp;utm_campaign=footer-link">Media Temple</a>, and the assets are served by <a href="http://tracking.maxcdn.com/c/13088/3982/378">MaxCDN</a>. It is made possible through <a href="https://css-tricks.com/advertising/">sponsorships</a> from products and services we like.</p>
+
+      <p class="mega-big-time-warning"><small>*May or may not contain any actual "CSS" or "Tricks".</small></p>
+
+      <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" title="Twitter Follow Button" src="./Flip an Image _ CSS-Tricks_files/follow_button.4ca9f1d9cb5a373a2f7d0969f5b40084.en.html" style="position: static; visibility: visible; width: 251px; height: 20px;" data-screen-name="Real_CSS_Tricks"></iframe>
+
+      <nav>
+        <a href="https://css-tricks.com/contact/">Contact</a>
+        <a href="https://css-tricks.com/about/">About</a>
+        <a href="https://css-tricks.com/archives/">Archives</a>
+        <a href="https://css-tricks.com/advertising/">Advertise</a>
+        <a href="https://css-tricks.com/jobs/">Jobs</a>
+        <a href="https://css-tricks.com/license/">License</a>
+        <a href="https://css-tricks.com/subscription-options/">Subscribe</a>
+        <a href="https://css-tricks.com/feed/">RSS</a>
+        <a href="https://css-tricks.com/guest-posting/">Guest Posting</a>
+      </nav>
+
+    </div>
+
+    <div class="footer-section-3">
+      <svg class="icon-footer-star" width="280px" height="280px">
+        <use xlink:href="#icon-logo-star"></use>
+      </svg>
+    </div>
+
+  </footer>
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" display="none"><symbol id="icon-anchor" viewBox="0 0 54.89 64"><title>icon-anchor</title><path fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2" d="M26.96 13v50"></path><path fill="none" stroke="#000" stroke-linejoin="bevel" stroke-width="2" d="M13.96 50l-10-3-3 10M39.96 50l10-3 4 10"></path><path d="M49.71 47A24 24 0 0 1 27 63 24 24 0 0 1 4.21 47M17.96 17h18" fill="none" stroke="#000" stroke-linejoin="bevel" stroke-width="2"></path><circle cx="26.96" cy="7" r="6" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"></circle></symbol><symbol id="icon-close" viewBox="0 0 95.08 95.09"><title>icon-close</title><path d="M58.31 47.47l34.58-34.58a7.63 7.63 0 0 0 0-10.69 7.63 7.63 0 0 0-10.69 0L47.62 36.78 13 2.19a7.63 7.63 0 0 0-10.69 0 7.63 7.63 0 0 0 0 10.69l34.6 34.6L2.33 82.07a7.29 7.29 0 0 0 0 10.69 7.63 7.63 0 0 0 10.69 0l34.6-34.6 34.6 34.6a7.27 7.27 0 0 0 10.68 0 7.63 7.63 0 0 0 0-10.69z" data-name="Layer 1"></path></symbol><symbol id="icon-email" viewBox="0 0 100 68.89"><title>icon-email</title><path d="M36.25 38.44L47.74 49.1a3.33 3.33 0 0 0 4.51 0l11.5-10.66 24.69 23.78H11.56zM93.33 11v46.6L68.68 33.85zM6.67 11l24.65 22.85L6.67 57.64zm5.1-4.37h76.46L50 42.12zM4.44 0A4.51 4.51 0 0 0 0 4.44v60a4.51 4.51 0 0 0 4.44 4.44h91.12a4.51 4.51 0 0 0 4.44-4.44v-60A4.51 4.51 0 0 0 95.56 0z" data-name="Layer 1"></path></symbol><symbol id="icon-link" viewBox="0 0 100 58.84"><title>icon-link</title><path d="M78.47 48H49.21a10.66 10.66 0 0 1-9-4.91h10.58A21.57 21.57 0 0 0 71.7 26.64h6.76a10.67 10.67 0 0 1 0 21.33zm-67.6-26.47a10.67 10.67 0 0 1 10.67-10.66H50.8A10.59 10.59 0 0 1 58.34 14a10.94 10.94 0 0 1 1.43 1.79H49.21a21.57 21.57 0 0 0-20.92 16.4h-6.76a10.67 10.67 0 0 1-10.66-10.66zm39.92 10.66H39.86a10.68 10.68 0 0 1 9.35-5.54h10.93a10.67 10.67 0 0 1-9.35 5.54zM100 37.31a21.53 21.53 0 0 0-21.53-21.53h-6.92A21.53 21.53 0 0 0 50.8 0H21.54a21.53 21.53 0 0 0 0 43.06h6.83v-.31A21.41 21.41 0 0 0 34 52.53a21.4 21.4 0 0 0 15.2 6.31h29.26A21.56 21.56 0 0 0 100 37.31z"></path></symbol><symbol id="icon-logo-star" viewBox="0 0 362.62 388.52"><title>icon-logo-star</title><path d="M156.58 239l-88.3 64.75c-10.59 7.06-18.84 11.77-29.43 11.77-21.19 0-38.85-18.84-38.85-40 0-17.69 14.13-30.64 27.08-36.52l103.6-44.74-103.6-45.92C13 142.46 0 129.51 0 111.85 0 90.66 18.84 73 40 73c10.6 0 17.66 3.53 28.25 11.77l88.3 64.75-11.74-104.78C141.28 20 157.76 0 181.31 0s40 18.84 36.5 43.56L206 149.52l88.3-64.75C304.93 76.53 313.17 73 323.77 73a39.2 39.2 0 0 1 38.85 38.85c0 18.84-12.95 30.61-27.08 36.5l-103.61 45.91L335.54 239c14.13 5.88 27.08 18.83 27.08 37.67 0 21.19-18.84 38.85-40 38.85-9.42 0-17.66-4.71-28.26-11.77L206 239l11.77 104.78c3.53 24.72-12.95 44.74-36.5 44.74s-40-18.84-36.5-43.56z"></path></symbol><symbol id="icon-menu" viewBox="0 0 100 68.42"><title>icon-menu</title><path d="M94.73 10.53H5.27c-7 0-7-10.53 0-10.53h89.46c6.88.14 6.88 10.38 0 10.53zm0 18.42H5.27c-7 0-7 10.53 0 10.53h89.46c6.86-.17 6.86-10.38 0-10.53zm0 28.94H5.27c-7 0-7 10.53 0 10.53h89.46c7.03 0 7.03-10.53 0-10.53z" data-name="Layer 1"></path></symbol><symbol id="icon-nav-almanac" viewBox="0 0 64 64"><path fill="none" d="M7 1h46v62H7z"></path><path fill="none" vector-effect="non-scaling-stroke" d="M15 63V2M20 15h28M20 21h28"></path></symbol><symbol id="icon-nav-forums" viewBox="0 0 64 64"><path d="M10 15h44v2H10zM10 25h44v2H10zM10 35h44v2H10z"></path><path d="M17 61.174L32.37 48H64V4H0v44h17v13.174zM2 46V6h60v40H31.63L19 56.826V46H2z"></path></symbol><symbol id="icon-nav-gallery" viewBox="0 0 64 64"><path d="M0 54h64V10H0v44zm2-2v-4.544l21.952-19.09 12.156 12.156 6.051-8.068L62 49.459V52H2zm60-40v34.826l-20.16-17.28-5.949 7.932-11.843-11.844L2 44.805V12h60z"></path><path d="M51 28c3.309 0 6-2.691 6-6s-2.691-6-6-6-6 2.691-6 6 2.691 6 6 6zm0-10c2.206 0 4 1.794 4 4s-1.794 4-4 4-4-1.794-4-4 1.794-4 4-4z"></path></symbol><symbol id="icon-nav-guide" viewBox="0 0 64 56.9"><title>icon-nav-guide</title><path d="M1 55.45l21-8 20 8 21-8v-46l-21 8-20-8-21 8v46zM22 1.45v46M42 9.45v46"></path></symbol><symbol id="icon-nav-home" viewBox="0 0 64 64"><path d="M32 3L2 33h9v30h12V47h16v16h12V33h11z"></path></symbol><symbol id="icon-nav-jobs" viewBox="0 0 64 64"><path d="M41 37.586L23.414 20l12-12-5.305-5.302-.688.486c-.025.018-2.537 1.769-5.671 1.769-2.244 0-4.277-.896-6.043-2.66L17 1.586-.414 19 12 31.414l10-10L39.586 39l-3 3L57 62.414 64.414 55 44 34.586l-3 3zM2.414 19L17.026 4.388c1.983 1.703 4.241 2.565 6.724 2.565 2.722 0 4.992-1.057 6.103-1.687L32.586 8 12 28.586 2.414 19zM57 59.586L39.414 42 44 37.414 61.586 55 57 59.586z"></path></symbol><symbol id="icon-nav-newsletter" viewBox="0 0 64 64"><path d="M64 12H0v39h64V12zm-4.395 2L32 31.81 4.395 14h55.21zM2 49V14.835L32 34.19l30-19.355V49H2z"></path></symbol><symbol id="icon-nav-shop" viewBox="0 0 64 64"><path d="M44 18h10v45H10V18h10z"></path><path d="M22 24V11c0-5.523 4.477-10 10-10s10 4.477 10 10v13"></path></symbol><symbol id="icon-nav-snippets" viewBox="0 0 64 64"><path d="M0 64h64.414L0-.414V64zm2-9h6v-2H2v-6h4v-2H2v-6h6v-2H2v-6h4v-2H2v-6h6v-2H2V4.414L59.586 62H2v-7z"></path><path d="M13 27.586V55h27.414L13 27.586zm2 4.828L35.586 53H15V32.414zM64.375 46.375l-2.472-9.886L25-.414 17.586 7l36.903 36.903 9.886 2.472zm-2.75-2.75l-6.114-1.528L26.414 13 31 8.414l29.097 29.097 1.528 6.114zM25 2.414L29.586 7 25 11.586 20.414 7 25 2.414z"></path></symbol><symbol id="icon-nav-video" viewBox="0 0 64 64"><path d="M46 30l17-10v32L46 42v10H1V20h45zM6 28h4M14 28h4"></path><path d="M7 36h18v10H7zM6 12h26l8 8"></path></symbol><symbol id="icon-search" viewBox="0 0 100 100"><title>icon-search</title><path d="M80.65 66.78a33.55 33.55 0 0 1-47.44-47.44 33.55 33.55 0 1 1 47.44 47.44zm6.73-54.16a43.06 43.06 0 0 0-65.32 55.71L2 88.39A6.8 6.8 0 0 0 11.61 98l20.06-20.06a43.06 43.06 0 0 0 55.71-65.32z"></path></symbol><symbol id="icon-star" viewBox="0 0 100 95.52"><title>icon-star</title><path d="M64.19 28.77a5.17 5.17 0 0 0 3.9 2.83s29.27-3 31.74 4.61-23 22.39-23 22.39a5.17 5.17 0 0 0-1.49 4.58s11.91 26.9 5.42 31.61S52.4 79.87 52.4 79.87a5.21 5.21 0 0 0-2.41-.6 5.14 5.14 0 0 0-2.41.6S25.68 99.5 19.2 94.79s5.42-31.61 5.42-31.61a5.18 5.18 0 0 0-1.49-4.58S-2.31 43.83.17 36.21s31.74-4.61 31.74-4.61a5.19 5.19 0 0 0 3.9-2.83S42 0 50 0s14.19 28.77 14.19 28.77z" data-name="Layer 1"></path></symbol><symbol id="icon-tag" viewBox="0 0 100 99.98"><title>icon-tag</title><path d="M42 42a10.07 10.07 0 1 1 0-14.24A10 10 0 0 1 42 42zm56 6.5l-43.74-44a7.19 7.19 0 0 0-5-2.25L8 0a7.55 7.55 0 0 0-8 7v1l2.5 41a7.11 7.11 0 0 0 2.25 4.75l43.49 44a7.2 7.2 0 0 0 5.24 2.25 6.81 6.81 0 0 0 5.25-2.25L97.72 59A7.47 7.47 0 0 0 98 48.5z"></path></symbol></svg>
+  <script type="text/javascript" src="./Flip an Image _ CSS-Tricks_files/form.js.download"></script>
+<script>var pollsL10n = {"ajax_url":"https:\/\/css-tricks.com\/wp-admin\/admin-ajax.php","text_wait":"Your last request is still being processed. Please wait a while ...","text_valid":"Please choose a valid poll answer.","text_multiple":"Maximum number of choices allowed: ","show_loading":"0","show_fading":"1"};</script><script>var markdownify = {"ajax_url":"\/wp-admin\/admin-ajax.php","nonce":"27773bbd5d"};</script><script>var antispampro_vars = {"code":"micuno","input_name_suffix":"luwele"};</script><script>var bblpAJAX = {"ajaxurl":"https:\/\/css-tricks.com\/wp-admin\/admin-ajax.php"};</script><script type="text/javascript" src="./Flip an Image _ CSS-Tricks_files/jquery-3.1.1.min.js.download"></script>
+<script type="text/javascript" src="./Flip an Image _ CSS-Tricks_files/wp-embed.min.js.download"></script>
+<script type="text/javascript" src="./Flip an Image _ CSS-Tricks_files/minqueue-89355811-d53a1244.js.download"></script>
+
+  
+<script src="./Flip an Image _ CSS-Tricks_files/global-libs-min.js.download"></script>
+<script src="./Flip an Image _ CSS-Tricks_files/global-min.js.download"></script>
+<script async="" src="./Flip an Image _ CSS-Tricks_files/ei.js.download"></script>
+
+
+
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-68528-29', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+
+
+
+
+<iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./Flip an Image _ CSS-Tricks_files/saved_resource.html"></iframe></body></html>

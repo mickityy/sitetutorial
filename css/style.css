@@ -1,0 +1,48 @@
+*
+{
+	margin:0;
+	padding:0;
+}
+
+body
+{
+	font-family:tahoma;
+}
+
+h1{
+	color: #ffffff;
+	font-size: 50px;
+}
+
+.row
+{
+ max-width: 1140px;
+ margin: 0 auto;
+}
+
+.hero
+{
+	position: absolute;
+	width:800px;
+	top:60%;/*how far the text is from the top of the screen*/
+	left:30%;/*how far the text is from the left side of the screen*/
+	transform: translate(-50%,-50%);/*this pushes the text to the left*/
+}
+
+header
+{
+	background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../img/header5.jpg);
+	/*
+	The linear gradient darkens the site from top to bottom
+
+	before we added the rgba linear gradient to make the h1 visible this is what the code looked like:
+
+   background-image:url(../img/header5.jpg);
+
+	../img  means go up a directory, then into images)*/
+
+	height:100vh; /*specify height or image won't show*/
+	background-position: center;
+	background-size: cover;
+
+}
