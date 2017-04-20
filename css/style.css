@@ -75,7 +75,9 @@ header
 
 .main-nav li a:hover
 {
-	 color: red;
+	 color: orange;
+	 border-bottom: 2px	solid #e67e22; /*adds an orange line below the menu item on hover*/
+	 transition: all 0.5s ease-in; /* makes the orange color and border bottom above appear gradually on hover*/
 }
 
 .logo img
