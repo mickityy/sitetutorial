@@ -88,7 +88,7 @@ header
 
 	 transition: all 0.5s ease-in; /* makes the orange color and border bottom above appear gradually on hover*/
 
-	 padding: 20px 0;/*this animated the padding on hover. But it also moves the menu items to the left one hover so we have to add the margin zero '0' at the end
+	 padding: 15px 0;/*this animated the padding on hover. But it also moves the menu items to the left one hover so we have to add the margin zero '0' at the end. This removes the rght margin**
 
 	 This ensure only the border bottom is animated*/
 }
@@ -98,4 +98,34 @@ header
 	height: 200px;/*logo height*/
 	float: left;/*without this code the logo and nav bar would overlap*/
 	margin-top: 10px;
+}
+
+.btn
+{
+	border: 1px solid #e67e22;/*adds a broder around the button with an ornage color and 1pixel thick. But it is touching the text so add padding around it*/
+	padding: 10px 10px; /*this creates a padding between the button text and border*/
+	color: #e67e22;
+	text-decoration: none;
+	border-radius: 12px;/*turns the text bordr from rectangle to bevel edges*/
+	margin-right: 15px;/*creates a spcae between the twon buttons*/
+}
+
+.button-awesome
+{
+	margin-top: 40px;/* adds padding betwen the buttons div and hero text above it*/
+}
+
+.btn-half
+{
+	background-color: #e67e22;
+	color: white; /*changes color of the first button*/
+
+}
+
+.btn-full:hover/*adding the word hover makes sure tha we only see the orange bg and white text color on hover*/
+{
+	background-color: #e67e22;/*btn 2 bg color*/
+	color: white;/*text color on the full button */
+	transition:all 0.5s ease-in;/*makes the above codes appear as a smooth transition on hover*/
+
 }
