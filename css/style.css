@@ -23,9 +23,13 @@ h1{
 .hero
 {
 	position: absolute;
+
 	width:800px;
+
 	top:70%;/*how far the text is from the top of the screen*/
+
 	left:40%;/*how far the text is from the left side of the screen*/
+
 	transform: translate(-50%,-50%);/*this pushes the text to the left*/
 }
 
@@ -50,7 +54,9 @@ header
 .main-nav
 {
 	float: right; /*moves the navigation bar to the right side*/
+
 	list-style: none; /*frmoves the black list dots from the menu items*/
+
 	margin-top: 100px; /*increases the padding between at the top*/
 
 }
@@ -58,6 +64,7 @@ header
 .main-nav li
 {
 	display: inline-block; /*displays the menu items in a single line instead of stacked*/
+
 	margin-left: 15px;/*creates a padding between menu items*/
 
 }
@@ -76,8 +83,14 @@ header
 .main-nav li a:hover
 {
 	 color: orange;
+
 	 border-bottom: 2px	solid #e67e22; /*adds an orange line below the menu item on hover*/
+
 	 transition: all 0.5s ease-in; /* makes the orange color and border bottom above appear gradually on hover*/
+
+	 padding: 20px 0;/*this animated the padding on hover. But it also moves the menu items to the left one hover so we have to add the margin zero '0' at the end
+
+	 This ensure only the border bottom is animated*/
 }
 
 .logo img
