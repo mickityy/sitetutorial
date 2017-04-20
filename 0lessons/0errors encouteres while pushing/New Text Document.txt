@@ -1,1 +1,7 @@
 i first created a readme online which i probably should have done after the site is pushed
+
+sitetutorial
+
+a site based on 'Build a Complete Responsive Website in HTML5 and CSS3 - YouTube'
+
+solution was to delete the repo and create a ew one

@@ -24,8 +24,8 @@ h1{
 {
 	position: absolute;
 	width:800px;
-	top:60%;/*how far the text is from the top of the screen*/
-	left:30%;/*how far the text is from the left side of the screen*/
+	top:70%;/*how far the text is from the top of the screen*/
+	left:40%;/*how far the text is from the left side of the screen*/
 	transform: translate(-50%,-50%);/*this pushes the text to the left*/
 }
 
@@ -45,4 +45,42 @@ header
 	background-position: center;
 	background-size: cover;
 
+}
+
+.main-nav
+{
+	float: right; /*moves the navigation bar to the right side*/
+	list-style: none; /*frmoves the black list dots from the menu items*/
+	margin-top: 100px; /*increases the padding between at the top*/
+
+}
+
+.main-nav li
+{
+	display: inline-block; /*displays the menu items in a single line instead of stacked*/
+	margin-left: 15px;/*creates a padding between menu items*/
+
+}
+
+.main-nav li a
+/*changes the property of the text inside the anchor tag: i,e
+<li><a href="">FOOD DELIVERY</a></li>
+*/
+{
+	color: white; /*changes menu items color to white*/
+	text-decoration: none; /*removes the underline on the menu items*/
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.main-nav li a:hover
+{
+	 color: red;
+}
+
+.logo img
+{
+	height: 200px;/*logo height*/
+	float: left;/*without this code the logo and nav bar would overlap*/
+	margin-top: 10px;
 }
