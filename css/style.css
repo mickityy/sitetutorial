@@ -129,3 +129,44 @@ header
 	transition:all 0.5s ease-in;/*makes the above codes appear as a smooth transition on hover*/
 
 }
+
+.copy/*the text below get good food not the fast food*/
+{
+	width: 70%;/*we sue percentage to make it responsive*/
+	margin-left: 15%;
+	margin-bottom: 20px;/*creates a space between the font awesome icons and the text*/
+}
+
+.features h3
+{
+	margin-top: 60px;/*space between header hero image and h3*/
+	margin-bottom: 30px;/*space between h3 and paragraph below it*/
+}
+
+h3::after/*creates a stroke below the h3*/
+{
+		width: 100px;
+		height: 2px;
+		background-color: #e67e22;
+		display: block;
+		content: "";
+		margin:0 auto;
+		margin-top: 30px;
+}
+
+.column-arrange
+{
+	text-align: justify;/*makes the column text run end to end*/
+}
+
+.features i /*fontawesome icons in the features section */
+{
+	font-size: 40px;/*icon size*/
+	color: #e67e22;
+	margin-left: 40%;/*moves the icon to the centre*/
+}
+
+.features h4/**/
+{
+	margin-left: 45px;/*centres the h4 titles*/
+}
